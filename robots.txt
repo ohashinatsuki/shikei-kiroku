@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://ohashinatsuki.github.io/shikei-kiroku/sitemap.xml
