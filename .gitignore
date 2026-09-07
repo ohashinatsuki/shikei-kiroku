@@ -1,2 +1,4 @@
 CLAUDE.md
 つづきはここから.md
+__pycache__/
+*.pyc
