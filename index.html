@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>世界死刑執行記録 — 今日、世界のどこで、誰が死刑を執行されたか</title>
+<meta name="description" content="今日、世界のどこで、誰が死刑を執行されたかを日本時間で毎日記録する資料サイト。国ごとに氏名・罪状・執行方法を出典つきで掲載しています。">
+<link rel="canonical" href="https://REPLACE_DOMAIN/">
+<meta property="og:title" content="世界死刑執行記録">
+<meta property="og:description" content="今日、世界のどこで、誰が死刑を執行されたかを日本時間で毎日記録。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+</head>
+<body>
+<style>
+:root{
+  --ground:#F4F5F3; --surface:#FFFFFF; --surface-2:#EBEEEA;
+  --ink:#191C1A; --ink-2:#454E48; --muted:#6E766F;
+  --rule:#D6DAD5; --rule-strong:#B6BDB7;
+  --accent:#1E4A42; --executed:#8A3324;
+  --serif:"Noto Serif JP",'Hiragino Mincho ProN','Yu Mincho',serif;
+  --sans:"Noto Sans JP",'Hiragino Sans','Yu Gothic',system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,'SFMono-Regular',Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#131614; --surface:#1B1F1C; --surface-2:#232823;
+    --ink:#E7EAE5; --ink-2:#B3BBB4; --muted:#848C85;
+    --rule:#2C322D; --rule-strong:#3E463F;
+    --accent:#7FB6A8; --executed:#CE7C68;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#131614; --surface:#1B1F1C; --surface-2:#232823;
+  --ink:#E7EAE5; --ink-2:#B3BBB4; --muted:#848C85;
+  --rule:#2C322D; --rule-strong:#3E463F;
+  --accent:#7FB6A8; --executed:#CE7C68;
+}
+*{box-sizing:border-box}
+body{margin:0; background:var(--ground); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased}
+.wrap{max-width:760px; margin:0 auto; padding:0 22px}
+h1,h2,h3{font-family:var(--serif); font-weight:700; margin:0; text-wrap:balance}
+a{color:var(--accent); text-decoration:none; border-bottom:1px solid transparent}
+a:hover{border-bottom-color:currentColor}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+
+/* masthead */
+.masthead{border-bottom:2px solid var(--ink); background:var(--surface)}
+.masthead .wrap{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:18px 22px 12px}
+.brand{font-family:var(--serif); font-size:22px; font-weight:700; letter-spacing:.04em}
+.brand small{display:block; font-family:var(--sans); font-size:10.5px; font-weight:500; letter-spacing:.22em; color:var(--muted); margin-top:3px}
+.mm{font-family:var(--mono); font-size:11px; color:var(--muted)}
+
+/* today */
+.today{padding:40px 0 30px; border-bottom:1px solid var(--rule)}
+.today .date{font-family:var(--serif); font-size:clamp(28px,6vw,44px); font-weight:700; line-height:1.15; letter-spacing:.01em}
+.today .date small{font-size:.5em; font-weight:500; color:var(--muted); margin-left:.4em}
+.today .q{font-family:var(--serif); font-size:17px; font-weight:500; color:var(--ink-2); margin-top:10px; letter-spacing:.04em}
+.today .ans{font-family:var(--serif); font-size:clamp(20px,3.6vw,26px); font-weight:700; margin-top:18px; line-height:1.45}
+.today .ans b{color:var(--executed)}
+.today .hint{font-size:12.5px; color:var(--muted); margin-top:10px; line-height:1.7; max-width:56ch}
+.today .hint a{color:var(--ink-2); border-bottom:1px solid var(--rule-strong)}
+
+/* days */
+.day{padding:26px 0 8px; border-bottom:1px solid var(--rule)}
+.day-head{display:flex; align-items:baseline; justify-content:space-between; gap:14px}
+.day-head h2{font-size:19px; letter-spacing:.02em}
+.day-head .n{font-family:var(--mono); font-size:13px; font-weight:600; color:var(--executed); font-variant-numeric:tabular-nums; white-space:nowrap}
+.day.empty{display:flex; align-items:baseline; gap:14px; padding:12px 0}
+.day.empty .d{font-family:var(--serif); font-size:14.5px; font-weight:500; color:var(--ink-2); min-width:8.5em}
+.day.empty .z{font-size:12.5px; color:var(--muted)}
+.today .day-head{display:none}
+
+/* country group */
+.country{margin-top:16px; padding-bottom:14px}
+.c-head{display:flex; align-items:baseline; gap:10px; padding-bottom:6px; border-bottom:1px solid var(--rule-strong)}
+.c-head h3{font-size:16px; letter-spacing:.03em}
+.c-head .cn{font-family:var(--mono); font-size:11.5px; color:var(--muted); font-variant-numeric:tabular-nums}
+.p{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1.6fr) auto; gap:4px 18px; padding:9px 0; border-bottom:1px solid var(--rule); align-items:baseline}
+.p:last-child{border-bottom:0}
+.p .nm{font-family:var(--serif); font-size:15.5px; font-weight:500; line-height:1.45}
+.p .nm small{font-family:var(--sans); font-size:12px; color:var(--muted); font-weight:400; margin-left:6px; white-space:nowrap}
+.p .dt{font-size:13px; color:var(--ink-2); line-height:1.65}
+.p .dt .m{color:var(--ink); font-weight:500}
+.p .dt .pl{color:var(--muted)}
+.p .dt .sep{color:var(--rule-strong); margin:0 5px}
+.p .ex{grid-column:1 / -1; font-size:12px; color:var(--muted); line-height:1.6; margin-top:-2px}
+.p .meta{font-family:var(--mono); font-size:10.5px; color:var(--muted); text-align:right; white-space:nowrap; line-height:1.6}
+.p .meta a{color:var(--muted); border-bottom:1px solid var(--rule-strong)}
+.p .meta a:hover{color:var(--accent)}
+.p .meta .t{display:block; color:var(--ink-2); font-weight:500}
+
+/* ads */
+.ad{max-width:760px; margin:0 auto; padding:0 22px}
+.ad-inner{border:1px dashed var(--rule-strong); background:var(--surface-2); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:2px; height:96px; color:var(--muted); font-family:var(--mono); font-size:11px; letter-spacing:.14em; margin:20px 0}
+.ad-inner b{font-size:10px; font-weight:500; opacity:.75}
+
+footer{padding:28px 0 48px; font-size:12px; color:var(--muted); line-height:1.9}
+footer b{color:var(--ink-2)}
+.srcs{display:flex; flex-wrap:wrap; gap:4px 12px; margin-top:6px}
+.srcs a{font-family:var(--mono); font-size:10.5px; color:var(--ink-2)}
+
+@media (max-width:600px){
+  .p{grid-template-columns:1fr; gap:2px}
+  .p .meta{text-align:left; white-space:normal}
+  .p .meta .t{display:inline; margin-right:8px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+</style>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">世界死刑執行記録<small>WORLD EXECUTION RECORD</small></div>
+    <div class="mm">日本時間 <span id="updated">—</span> 更新</div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+  <section class="today" id="today"></section>
+</div>
+
+<div class="ad"><div class="ad-inner"><b>広告枠</b>AD SLOT 01 ／ 728 × 90</div></div>
+
+<div class="wrap" id="days"></div>
+
+<div class="ad"><div class="ad-inner"><b>広告枠</b>AD SLOT 02 ／ 記事下 300 × 250</div></div>
+
+<div class="wrap">
+  <footer>
+    <b>世界死刑執行記録</b> — 今日、世界のどこで、誰が死刑を執行されたかを日本時間で毎日記録する。掲載するのは出典で確認できた執行のみ。イランは公式発表が全体の1割程度、中国・北朝鮮・ベトナムは執行を公表しないため、実際の執行はこれより多い。
+    <div class="srcs">
+      <a href="https://hengaw.net/en" target="_blank" rel="noopener">Hengaw</a>
+      <a href="https://iranhr.net/en/" target="_blank" rel="noopener">Iran Human Rights</a>
+      <a href="https://iran-hrm.com/" target="_blank" rel="noopener">Iran HRM</a>
+      <a href="https://www.spa.gov.sa/" target="_blank" rel="noopener">サウジ通信</a>
+      <a href="https://deathpenaltyinfo.org/executions/2026" target="_blank" rel="noopener">DPIC</a>
+      <a href="https://www.cnb.gov.sg/" target="_blank" rel="noopener">シンガポールCNB</a>
+      <a href="https://handsoffcain.info/" target="_blank" rel="noopener">Hands Off Cain</a>
+      <a href="https://deathpenaltynews.blogspot.com/" target="_blank" rel="noopener">Death Penalty News</a>
+      <a href="https://www.jiji.com/jc/article?k=2026082100314&amp;g=soc" target="_blank" rel="noopener">時事通信</a>
+    </div>
+  </footer>
+</div>
+</main>
+
+<script>
+function render(DATA){
+  "use strict";
+  var E = DATA.E, LIBYA_N = DATA.LIBYA_N;
+  var JA = {}; DATA.C.forEach(function(c){ JA[c.en] = c.ja; });
+  var WD = ['日','月','火','水','木','金','土'];
+  var pad = function(n){ return ('0'+n).slice(-2); };
+  function nowJST(){ var d = new Date(); return new Date(d.getTime() + (d.getTimezoneOffset() + 540) * 60000); }
+  function ymd(d){ return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function keyOf(d){ return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function toJST(dateKey, t, off){
+    var p = dateKey.split('-').map(Number), hm = t.split(':').map(Number);
+    var j = new Date(Date.UTC(p[0], p[1]-1, p[2], hm[0]-off, hm[1]) + 9*3600000);
+    return { key: j.getUTCFullYear()+'-'+pad(j.getUTCMonth()+1)+'-'+pad(j.getUTCDate()), time: pad(j.getUTCHours())+':'+pad(j.getUTCMinutes()) };
+  }
+  function persons(e){ return (e.c==='Libya' && LIBYA_N[e.d]) ? LIBYA_N[e.d] : 1; }
+  function jp(d){ return (d.getMonth()+1)+'月'+d.getDate()+'日（'+WD[d.getDay()]+'）'; }
+
+  /* 日本時間の日付ごとに、国ごとにまとめる */
+  var byDay = {};
+  E.forEach(function(e){
+    var k = e.d, t = null;
+    if (e.t){ var j = toJST(e.d, e.t, e.off); k = j.key; t = j.time; }
+    e.jtime = t;
+    var day = byDay[k] = byDay[k] || {};
+    (day[e.c] = day[e.c] || []).push(e);
+  });
+
+  function renderPerson(e){
+    var nm = e.name ? esc(e.name) + (e.age ? '<small>' + e.age + '歳</small>' : '') : '氏名非公表<small>' + persons(e) + '人</small>';
+    var meta = (e.jtime ? '<span class="t">' + e.jtime + ' JST</span>' : '') +
+               '<a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.src) + '</a>';
+    return '<div class="p"><div class="nm">' + nm + '</div>' +
+      '<div class="dt">' + esc(e.charge) + '<span class="sep">｜</span><span class="m">' + esc(e.method) + '</span>' +
+      (e.place ? '<span class="sep">｜</span><span class="pl">' + esc(e.place) + '</span>' : '') + '</div>' +
+      '<div class="meta">' + meta + '</div>' +
+      (e.extra ? '<div class="ex">' + esc(e.extra) + '</div>' : '') + '</div>';
+  }
+
+  function renderDay(day){
+    var groups = Object.keys(day).map(function(c){
+      var n = day[c].reduce(function(s,e){ return s + persons(e); }, 0);
+      return { c:c, n:n, list:day[c] };
+    }).sort(function(a,b){ return b.n - a.n; });
+    var html = '', total = 0;
+    groups.forEach(function(g){
+      total += g.n;
+      html += '<div class="country"><div class="c-head"><h3>' + esc(JA[g.c] || g.c) + '</h3><span class="cn">' + g.n + '人</span></div>' +
+        g.list.map(renderPerson).join('') + '</div>';
+    });
+    return { html: html, total: total, groups: groups };
+  }
+
+  /* 今日 */
+  var today = ymd(nowJST()), tkey = keyOf(today);
+  var tsec = document.getElementById('today');
+  var tday = byDay[tkey];
+  var thead = '<div class="date">' + today.getFullYear() + '年' + (today.getMonth()+1) + '月' + today.getDate() + '日<small>' + WD[today.getDay()] + '曜日</small></div>' +
+              '<div class="q">今日、世界のどこで、誰が死刑を執行されたか</div>';
+  if (tday){
+    var r = renderDay(tday);
+    tsec.innerHTML = thead + '<div class="ans"><b>' + r.total + '人</b>の執行を確認　' +
+      r.groups.map(function(g){ return esc(JA[g.c] || g.c) + ' ' + g.n; }).join('・') + '</div>' + r.html;
+  } else {
+    tsec.innerHTML = thead + '<div class="ans">まだ確認されていません</div>' +
+      '<div class="hint">各国の発表や人権団体の確認には数時間から数日の遅れがあります。米国の執行は現地の夕方（日本の翌朝）に行われます。確認でき次第、ここに追加します。</div>';
+  }
+  var t = nowJST();
+  document.getElementById('updated').textContent = t.getFullYear()+'.'+pad(t.getMonth()+1)+'.'+pad(t.getDate())+' '+pad(t.getHours())+':'+pad(t.getMinutes());
+
+  /* 昨日から21日前まで */
+  var out = '', cur = new Date(today); cur.setDate(cur.getDate()-1);
+  for (var i = 0; i < 21; i++){
+    var k = keyOf(cur), day = byDay[k];
+    if (day){
+      var r2 = renderDay(day);
+      out += '<section class="day" id="d-' + k + '"><div class="day-head"><h2>' + jp(cur) + '</h2><span class="n">' + r2.total + '人</span></div>' + r2.html + '</section>';
+    } else {
+      out += '<div class="day empty"><span class="d">' + jp(cur) + '</span><span class="z">なし</span></div>';
+    }
+    cur.setDate(cur.getDate()-1);
+  }
+  document.getElementById('days').innerHTML = out;
+}
+fetch('data.json?v=' + Date.now()).then(function(r){ return r.json(); }).then(render).catch(function(){ document.getElementById('today').innerHTML = '<div class="date">世界死刑執行記録</div><div class="ans">データを読み込めませんでした</div><div class="hint">時間をおいて再読み込みしてください。</div>'; });
+</script>
+
+</body>
+</html>
