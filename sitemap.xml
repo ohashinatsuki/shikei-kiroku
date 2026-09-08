@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shikei-kiroku.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://shikei-kiroku.com/japan.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://shikei-kiroku.com/yomimono.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/kiroku-no-yomikata.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/sekai-no-ima.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/iran.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/saudi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/usa.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/japan-tetsuzuki.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/mayaku.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/enzai.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/yougo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/miseinen.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/josei.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/haishi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/kokuren.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://shikei-kiroku.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://shikei-kiroku.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://shikei-kiroku.com/japan.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/archive.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/yomimono.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/about.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/privacy.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/en/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://shikei-kiroku.com/en/japan.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/en/archive.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/en/about.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/en/privacy.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/kiroku-no-yomikata.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/sekai-no-ima.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/iran.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/saudi.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/usa.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/japan-tetsuzuki.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/mayaku.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/enzai.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/yougo.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/miseinen.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/josei.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/haishi.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/kokuren.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>

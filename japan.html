@@ -4,42 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>日本の死刑執行記録 — 世界死刑執行記録</title>
-<meta name="description" content="日本で死刑が執行された人の記録。2017年12月以降のすべての執行を、氏名・事件・執行場所・法務省の発表を出典として日付順に掲載しています。">
+<meta name="description" content="日本で死刑が執行された人の記録。2013年2月以降のすべての執行を、氏名・事件・執行場所・法務省の発表を出典として日付順に掲載しています。">
 <link rel="canonical" href="https://shikei-kiroku.com/japan.html">
-<meta name="robots" content="index,follow">
-<meta property="og:title" content="日本の死刑執行記録">
-<meta property="og:description" content="日本で死刑が執行された人の記録。2017年12月以降のすべての執行を出典つきで掲載。">
-<meta property="og:type" content="article">
+<link rel="alternate" hreflang="ja" href="https://shikei-kiroku.com/japan.html">
+<link rel="alternate" hreflang="en" href="https://shikei-kiroku.com/en/japan.html">
+<link rel="alternate" hreflang="x-default" href="https://shikei-kiroku.com/japan.html">
+<meta property="og:title" content="日本の死刑執行記録 — 世界死刑執行記録">
+<meta property="og:description" content="日本で死刑が執行された人の記録。2013年2月以降のすべての執行を、氏名・事件・執行場所・法務省の発表を出典として日付順に掲載しています。">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="page.css">
-<style>
-.count{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:14px}
-.day{padding:22px 0 6px; border-bottom:1px solid var(--rule)}
-.day-head{display:flex; align-items:baseline; justify-content:space-between; gap:14px; padding-bottom:6px; border-bottom:1px solid var(--rule-strong)}
-.day-head h2{font-size:17px; letter-spacing:.02em; margin:0}
-.day-head .n{font-family:var(--mono); font-size:12.5px; font-weight:600; color:#8A3324; font-variant-numeric:tabular-nums; white-space:nowrap}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .day-head .n{color:#CE7C68}}
-:root[data-theme="dark"] .day-head .n{color:#CE7C68}
-.p{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.7fr) auto; gap:4px 18px; padding:10px 0; border-bottom:1px solid var(--rule); align-items:baseline}
-.p:last-child{border-bottom:0}
-.p .nm{font-family:var(--serif); font-size:15.5px; font-weight:500; line-height:1.5}
-.p .nm small{font-family:var(--sans); font-size:12px; color:var(--muted); font-weight:400; margin-left:6px; white-space:nowrap}
-.p .dt{font-size:13px; color:var(--ink-2); line-height:1.7}
-.p .dt .m{color:var(--ink); font-weight:500}
-.p .dt .pl{color:var(--muted)}
-.p .dt .sep{color:var(--rule-strong); margin:0 5px}
-.p .ex{grid-column:1 / -1; font-size:12px; color:var(--muted); line-height:1.65; margin-top:-2px}
-.p .meta{font-family:var(--mono); font-size:10.5px; color:var(--muted); text-align:right; white-space:nowrap; line-height:1.6}
-.p .meta a{color:var(--muted); border-bottom:1px solid var(--rule-strong)}
-.p .meta a:hover{color:var(--accent)}
-@media (max-width:600px){
-  .p{grid-template-columns:1fr; gap:2px}
-  .p .meta{text-align:left; white-space:normal}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CS3LBG96H8"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -52,94 +29,33 @@ gtag('config', 'G-CS3LBG96H8', { anonymize_ip: true });
 
 <header class="masthead">
   <div class="wrap">
-    <div class="brand"><a href="./">世界死刑執行記録</a><small>WORLD EXECUTION RECORD</small></div>
-    <div class="mm">日本の記録</div>
+    <div class="brand">世界死刑執行記録<small>WORLD EXECUTION RECORD</small></div>
+    <div class="mm"><a class="lang" href="en/">English</a></div>
   </div>
 </header>
+
 <nav class="mainnav">
-  <div class="wrap">
-    <a href="./">世界の記録</a>
-    <a href="japan.html" aria-current="page">日本の記録</a>
-    <a href="yomimono.html">読み物</a>
-    <a href="about.html">編集方針</a>
-  </div>
+  <div class="wrap"><a href="./">世界の記録</a><a href="japan.html" aria-current="page">日本の記録</a><a href="archive.html">記録アーカイブ</a><a href="yomimono.html">読み物</a><a href="about.html">編集方針</a></div>
 </nav>
 
 
 <main class="wrap">
 <article>
   <h1>日本の死刑執行記録</h1>
-
-  <p class="lead">日本で死刑が執行された人の記録です。法務大臣が執行のたびに開く臨時記者会見の発表を出典としています。日本の法務省が執行された人の氏名を公表するようになったのは2007年12月からで、このページはそのうち<b>2013年2月以降のすべての執行</b>を収めています。手続きの流れは <a href="japan-tetsuzuki.html">日本の死刑執行はどう決まり、どう行われるか</a> で説明しています。</p>
-
-  <div class="note">
-    日本の死刑は<b>絞首</b>により、東京・大阪・名古屋・広島・福岡・仙台・札幌の各拘置所で執行されます。執行は当日の朝に本人へ告知され、事前の予告はありません。執行後、法務大臣が記者会見を開き、氏名・年齢・執行場所を公表します。<br><br>
-    <b>年齢や執行場所が空欄の記録は、出典で確認できなかったものです。</b>推測では埋めていません。確認でき次第、追加します。
-  </div>
-
-  <div class="count" id="count">読み込み中…</div>
-  <div id="list"></div>
-
-  <h2>このページについて</h2>
-  <p>掲載しているのは、司法手続きを経て執行が確認された事例だけです。公判中の被告人や、死刑判決を受けたが執行されていない人は掲載していません。事件の記述は、量刑の理由となった事実に限っています。</p>
-  <p>2020年、2023年、2024年は、日本で死刑の執行が1件もありませんでした（このページの範囲外では2011年も執行がありません）。執行がない年があるのは、法務大臣が命令を出さなかった期間があるためです。詳しくは <a href="japan-tetsuzuki.html">執行の手続き</a> をご覧ください。</p>
-  <p>詳しい編集方針は <a href="about.html">運営者情報・編集方針</a> をご覧ください。世界全体の日々の記録は <a href="./">記録トップ</a> にあります。</p>
-
-  <div class="rev">最終更新 2026-09-08</div>
+  <p class="lead">日本で死刑が執行された人の記録です。法務大臣が執行のたびに開く臨時記者会見の発表を出典としています。法務省が氏名を公表するようになったのは2007年12月からで、このページはそのうち<b>2013年2月以降のすべての執行</b>を収めています。手続きの流れは <a href="japan-tetsuzuki.html">日本の死刑執行はどう決まり、どう行われるか</a> で説明しています。</p>
+  <div class="note">日本の死刑は<b>絞首</b>により、東京・大阪・名古屋・広島・福岡・仙台・札幌の各拘置所で執行されます。執行は当日の朝に本人へ告知され、事前の予告はありません。執行後、法務大臣が記者会見を開き、氏名・年齢・執行場所を公表します。<br><br><b>年齢や執行場所が空欄の記録は、出典で確認できなかったものです。</b>推測では埋めていません。</div>
+  <p class="count">記録 45人 ／ 執行日 21日 ／ 2013-02-21 〜 2026-08-21</p>
+  <section class="day" id="d-2026-08-21"><div class="day-head"><h2>2026年8月21日（金）</h2><span class="n">1人</span></div><div class="p"><div class="nm">高見 素直<small>58歳</small></div><div class="dt">2009年7月5日、大阪市此花区のパチンコ店に放火し5人を死亡させ、10人に重軽傷<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://www.jiji.com/jc/article?k=2026082100314&amp;g=soc" target="_blank" rel="noopener">時事通信／NHK</a></div><div class="ex">2011年大阪地裁死刑、2016年2月最高裁で確定。2025年6月以来1年2か月ぶり、高市内閣で初</div></div></section><section class="day" id="d-2025-06-27"><div class="day-head"><h2>2025年6月27日（金）</h2><span class="n">1人</span></div><div class="p"><div class="nm">白石 隆浩</div><div class="dt">2017年、神奈川県座間市のアパートで男女9人を殺害<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/suzuki_r070627/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">2年11か月ぶりの執行だった。</div></div></section><section class="day" id="d-2022-07-26"><div class="day-head"><h2>2022年7月26日（火）</h2><span class="n">1人</span></div><div class="p"><div class="nm">加藤 智大</div><div class="dt">2008年6月8日、東京・秋葉原の歩行者天国にトラックで突入し、通行人7人を殺害、10人に重軽傷<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/furukawa_040726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">秋葉原無差別殺傷事件。</div></div></section><section class="day" id="d-2021-12-21"><div class="day-head"><h2>2021年12月21日（火）</h2><span class="n">3人</span></div><div class="p"><div class="nm">小野川 光紀<small>44歳</small></div><div class="dt">2003年、群馬県のパチンコ店店長ら2人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/furukawa_031221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">藤城 康孝<small>65歳</small></div><div class="dt">2004年8月、兵庫県加古川市で親族7人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/furukawa_031221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">高根沢 智明<small>54歳</small></div><div class="dt">2003年、群馬県のパチンコ店店長ら2人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/furukawa_031221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2019-12-26"><div class="day-head"><h2>2019年12月26日（木）</h2><span class="n">1人</span></div><div class="p"><div class="nm">魏 巍</div><div class="dt">2003年6月、福岡市で一家4人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">福岡拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/mori_011226/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">中国籍。</div></div></section><section class="day" id="d-2019-08-02"><div class="day-head"><h2>2019年8月2日（金）</h2><span class="n">2人</span></div><div class="p"><div class="nm">庄子 幸一<small>64歳</small></div><div class="dt">2001年、神奈川県大和市で女性2人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/yamashita_010802/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">再審請求中の執行だった。</div></div><div class="p"><div class="nm">鈴木 泰徳<small>50歳</small></div><div class="dt">2004年、福岡市で女性3人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">福岡拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/yamashita_010802/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2018-12-27"><div class="day-head"><h2>2018年12月27日（木）</h2><span class="n">2人</span></div><div class="p"><div class="nm">岡本 啓三</div><div class="dt">1988年1月、大阪市で投資顧問会社の社長ら2人を殺害し現金を強奪、遺体をコンクリート詰めにして遺棄<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/yamashita_301227/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">末森 博也</div><div class="dt">1988年1月、大阪市で投資顧問会社の社長ら2人を殺害し現金を強奪、遺体をコンクリート詰めにして遺棄<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/yamashita_301227/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2018-07-26"><div class="day-head"><h2>2018年7月26日（木）</h2><span class="n">6人</span></div><div class="p"><div class="nm">岡崎 一明</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">広瀬 健一</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">この2日間で、オウム真理教事件の死刑確定者13人全員の刑が執行された。</div></div><div class="p"><div class="nm">林 泰男</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">横山 真人</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">端本 悟</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">豊田 亨</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_300726/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2018-07-06"><div class="day-head"><h2>2018年7月6日（金）</h2><span class="n">7人</span></div><div class="p"><div class="nm">中川 智正</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">井上 嘉浩</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">土谷 正実</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">新實 智光</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">早川 紀代秀</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">松本 智津夫</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">教団元代表。麻原彰晃を名乗った。</div></div><div class="p"><div class="nm">遠藤 誠一</div><div class="dt">1994年の松本サリン事件、1995年の地下鉄サリン事件など一連のオウム真理教事件による殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_3007061/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2017-12-19"><div class="day-head"><h2>2017年12月19日（火）</h2><span class="n">2人</span></div><div class="p"><div class="nm">松井 喜代司</div><div class="dt">2010年6月、群馬県安中市で親子3人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_291219_01/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">関 光彦</div><div class="dt">1992年3月、千葉県市川市で一家4人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_291219_01/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">犯行時19歳。少年時の犯行で死刑が執行された数少ない例。</div></div></section><section class="day" id="d-2017-07-13"><div class="day-head"><h2>2017年7月13日（木）</h2><span class="n">2人</span></div><div class="p"><div class="nm">住田 紘一<small>34歳</small></div><div class="dt">2011年9月、岡山市で元同僚の女性を殺害し、遺体を損壊した<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">広島拘置所</span></div><div class="meta"><a href="https://www.amnesty.or.jp/news/2017/0713_6941.html" target="_blank" rel="noopener">アムネスティ日本／報道</a></div></div><div class="p"><div class="nm">西川 正勝<small>61歳</small></div><div class="dt">1991年から1992年にかけて、近畿地方でスナックの経営者ら4人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://www.amnesty.or.jp/news/2017/0713_6941.html" target="_blank" rel="noopener">アムネスティ日本／報道</a></div></div></section><section class="day" id="d-2016-11-11"><div class="day-head"><h2>2016年11月11日（金）</h2><span class="n">1人</span></div><div class="p"><div class="nm">田尻 賢一</div><div class="dt">2004年と2011年、熊本県内で民家に侵入して金品を奪う目的で女性2人を殺害、男性1人に重傷を負わせた<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kaneda_281111/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2016-03-25"><div class="day-head"><h2>2016年3月25日（金）</h2><span class="n">2人</span></div><div class="p"><div class="nm">吉田 純子</div><div class="dt">殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/iwaki_280325/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">法務大臣は会見で「極めて残忍な事案」と述べたのみで、事件の詳細は公表しなかった。</div></div><div class="p"><div class="nm">鎌田 安利</div><div class="dt">殺人等<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/iwaki_280325/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div><div class="ex">法務大臣は会見で「極めて残忍な事案」と述べたのみで、事件の詳細は公表しなかった。</div></div></section><section class="day" id="d-2015-12-18"><div class="day-head"><h2>2015年12月18日（金）</h2><span class="n">2人</span></div><div class="p"><div class="nm">津田 寿美年</div><div class="dt">2009年、川崎市でアパートの住人ら3人を包丁で刺殺<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/iwaki_271218/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">若林 一行</div><div class="dt">2009年、岩手県洋野町で民家に侵入し、帰宅した女性2人を殺害して金品を奪った<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/iwaki_271218/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2015-06-25"><div class="day-head"><h2>2015年6月25日（木）</h2><span class="n">1人</span></div><div class="p"><div class="nm">神田 司</div><div class="dt">2007年8月、名古屋市で帰宅途中の女性を車内に監禁して金品を奪い、窒息死させて遺棄<span class="sep">｜</span><span class="m">絞首刑</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/kamikawa_270625/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2014-08-29"><div class="day-head"><h2>2014年8月29日（金）</h2><span class="n">2人</span></div><div class="p"><div class="nm">小林 光弘<small>56歳</small></div><div class="dt">2001年5月、青森県弘前市の消費者金融店舗に放火し、従業員5人を殺害、4人に傷害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">仙台拘置支所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_260829/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">髙見澤 勤<small>59歳</small></div><div class="dt">暴力団組長として配下と共謀し、別々の機会に拳銃で3人を射殺、うち2件で死体を遺棄<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_260829/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2014-06-26"><div class="day-head"><h2>2014年6月26日（木）</h2><span class="n">1人</span></div><div class="p"><div class="nm">川﨑 政則<small>68歳</small></div><div class="dt">2007年、香川県坂出市で義理の姉とその孫2人の計3人を刺殺し、死体を遺棄<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_260626/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2013-12-12"><div class="day-head"><h2>2013年12月12日（木）</h2><span class="n">2人</span></div><div class="p"><div class="nm">加賀山 領治<small>63歳</small></div><div class="dt">金品を奪う目的で2人をナイフで刺殺し、1人を殺害しようとした（強盗殺人・同未遂）<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_251212/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">藤島 光雄<small>55歳</small></div><div class="dt">逮捕を恐れて口封じのため、元妻の伯母ら2人を殺害し死体を遺棄<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_251212/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2013-09-12"><div class="day-head"><h2>2013年9月12日（木）</h2><span class="n">1人</span></div><div class="p"><div class="nm">熊谷 徳久<small>73歳</small></div><div class="dt">現金を奪う目的で1人を拳銃で射殺し、さらに1人を殺害しようとした（強盗殺人・同未遂）<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250912/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2013-04-26"><div class="day-head"><h2>2013年4月26日（金）</h2><span class="n">2人</span></div><div class="p"><div class="nm">宮城 吉英<small>56歳</small></div><div class="dt">共犯者と共謀し、ファミリーレストランの店内と店前で拳銃を使い2人を射殺<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250426/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">濱崎 勝次<small>64歳</small></div><div class="dt">共犯者と共謀し、ファミリーレストランの店内と店前で拳銃を使い2人を射殺<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250426/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section><section class="day" id="d-2013-02-21"><div class="day-head"><h2>2013年2月21日（木）</h2><span class="n">3人</span></div><div class="p"><div class="nm">加納 惠喜<small>62歳</small></div><div class="dt">名古屋市中区栄で、スナックの経営者を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">名古屋拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">小林 薫<small>44歳</small></div><div class="dt">2004年11月、奈良市で小学1年の女児を誘拐して殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">大阪拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div><div class="p"><div class="nm">金川 真大<small>29歳</small></div><div class="dt">2008年3月、茨城県土浦市で通行人ら8人を殺傷し、1人を殺害<span class="sep">｜</span><span class="m">絞首刑</span><span class="sep">｜</span><span class="pl">東京拘置所</span></div><div class="meta"><a href="https://crimeinfo.jp/data/houmukaiken/tanigaki_250221/" target="_blank" rel="noopener">法務省（法務大臣臨時記者会見）</a></div></div></section>
 </article>
 </main>
 
+
 <div class="wrap">
 <footer>
-  <div class="nav">
-    <a href="./">記録トップ</a>
-    <a href="japan.html">日本の死刑執行記録</a>
-    <a href="yomimono.html">読み物</a>
-    <a href="about.html">運営者情報・編集方針</a>
-    <a href="privacy.html">プライバシーポリシー</a>
-  </div>
+  <div class="nav"><a href="./">世界の記録</a><a href="japan.html" aria-current="page">日本の記録</a><a href="archive.html">記録アーカイブ</a><a href="yomimono.html">読み物</a><a href="about.html">編集方針</a><a href="privacy.html">プライバシーポリシー</a></div>
   <b>世界死刑執行記録</b> — 掲載するのは出典で確認できた執行のみ。
 </footer>
 </div>
-
-<script>
-(function(){
-  "use strict";
-  var WD = ['日','月','火','水','木','金','土'];
-  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
-  function jp(k){
-    var p = k.split('-').map(Number);
-    var d = new Date(p[0], p[1]-1, p[2]);
-    return p[0]+'年'+p[1]+'月'+p[2]+'日（'+WD[d.getDay()]+'）';
-  }
-  function person(e){
-    var nm = esc(e.name) + (e.age ? '<small>' + e.age + '歳</small>' : '');
-    var dt = esc(e.charge) + '<span class="sep">｜</span><span class="m">' + esc(e.method) + '</span>' +
-             (e.place ? '<span class="sep">｜</span><span class="pl">' + esc(e.place) + '</span>' : '');
-    return '<div class="p"><div class="nm">' + nm + '</div>' +
-      '<div class="dt">' + dt + '</div>' +
-      '<div class="meta"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.src) + '</a></div>' +
-      (e.extra ? '<div class="ex">' + esc(e.extra) + '</div>' : '') + '</div>';
-  }
-  fetch('data.json?v=' + Date.now()).then(function(r){ return r.json(); }).then(function(DATA){
-    var rows = DATA.E.filter(function(e){ return e.c === 'Japan'; });
-    var days = {};
-    rows.forEach(function(e){ (days[e.d] = days[e.d] || []).push(e); });
-    var keys = Object.keys(days).sort().reverse();
-    var total = rows.length;
-    document.getElementById('count').textContent =
-      '記録 ' + total + '人 ／ 執行日 ' + keys.length + '日 ／ ' +
-      (keys.length ? keys[keys.length-1] + ' 〜 ' + keys[0] : '');
-    document.getElementById('list').innerHTML = keys.map(function(k){
-      return '<section class="day" id="d-' + k + '"><div class="day-head"><h2>' + jp(k) +
-        '</h2><span class="n">' + days[k].length + '人</span></div>' +
-        days[k].map(person).join('') + '</section>';
-    }).join('');
-  }).catch(function(){
-    document.getElementById('count').textContent = 'データを読み込めませんでした。時間をおいて再読み込みしてください。';
-  });
-})();
-</script>
 
 </body>
 </html>
