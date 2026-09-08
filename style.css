@@ -191,3 +191,8 @@ footer .nav a{display:inline-block; padding:6px 0; font-size:13.5px}
   padding-bottom:8px; border-bottom:2px solid var(--ink)}
 .mon .day-head h2{font-size:16px}
 html{scroll-behavior:smooth}
+
+/* お問い合わせフォーム */
+.formwrap{margin:26px 0 8px; border:1px solid var(--rule); border-radius:3px;
+  background:var(--surface); overflow:hidden}
+.formwrap iframe{display:block; width:100%; border:0}

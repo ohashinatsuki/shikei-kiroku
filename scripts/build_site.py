@@ -79,9 +79,10 @@ def jmonth(k, lang):
 # ---------------- 見た目 ----------------
 
 NAV_JA = [("./", "世界の記録"), ("japan.html", "日本の記録"), ("archive.html", "記録アーカイブ"),
-          ("yomimono.html", "読み物"), ("about.html", "編集方針")]
+          ("yomimono.html", "読み物"), ("about.html", "編集方針"),
+          ("contact.html", "お問い合わせ")]
 NAV_EN = [("./", "Today"), ("japan.html", "Japan"), ("archive.html", "Archive"),
-          ("about.html", "About")]
+          ("about.html", "About"), ("contact.html", "Contact")]
 
 
 def page(lang, title, desc, path, body, current="", alt=None):
@@ -391,8 +392,10 @@ def write(path, text):
 
 
 def build_sitemap(extra_pages):
-    urls = ["", "japan.html", "archive.html", "yomimono.html", "about.html", "privacy.html",
-            "en/", "en/japan.html", "en/archive.html", "en/about.html", "en/privacy.html"] + extra_pages
+    urls = ["", "japan.html", "archive.html", "yomimono.html", "about.html",
+            "contact.html", "privacy.html",
+            "en/", "en/japan.html", "en/archive.html", "en/about.html",
+            "en/contact.html", "en/privacy.html"] + extra_pages
     rows = "".join(
         '  <url><loc>%s/%s</loc><changefreq>%s</changefreq><priority>%s</priority></url>\n'
         % (SITE, u, "daily" if u in ("", "en/") else "weekly", "1.0" if u in ("", "en/") else "0.7")
@@ -421,7 +424,7 @@ def main():
     yomi = ["kiroku-no-yomikata.html", "sekai-no-ima.html", "iran.html", "saudi.html",
             "usa.html", "japan-tetsuzuki.html", "mayaku.html", "enzai.html", "yougo.html",
             "miseinen.html", "josei.html", "haishi.html", "kokuren.html",
-            "saishin-muzai.html", "usa-jinshu.html"]
+            "saishin-muzai.html", "usa-jinshu.html", "lynch.html", "muzai-shikko.html"]
     build_sitemap(yomi)
     print("  sitemap.xml")
     print("生成完了: 記録 %d件 / 日本時間 %s 時点" % (len(d["E"]), today))
