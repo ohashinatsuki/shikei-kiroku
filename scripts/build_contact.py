@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 JA_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSdcGIKD14yvMaLZs9Z4KDsrksoLmCQYHN9-XkV9baRQC9deVg/viewform"
-EN_FORM = ""   # 英語フォームができたらここに貼る
+EN_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfuX1UQQUBH8jcReq5Df0uJpLMCpJ5YWq_Qe2XDvGfDimvYAw/viewform"
 
 src = io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_site.py"),
               encoding="utf-8").read().replace("\nmain()\n", "\n")
@@ -25,10 +25,13 @@ exec(compile(src, "build_site.py", "exec"), ns)
 page = ns["page"]
 
 
-def embed(url):
-    return ('<div class="formwrap"><iframe src="%s?embedded=true" '
+def embed(url, lang="ja"):
+    return ('<div class="formwrap"><iframe src="%s?embedded=true&amp;hl=%s" '
             'width="100%%" height="1180" frameborder="0" marginheight="0" marginwidth="0" '
-            'title="お問い合わせフォーム" loading="lazy">読み込んでいます…</iframe></div>' % url)
+            'title="%s" loading="lazy">%s</iframe></div>'
+            % (url, lang,
+               "お問い合わせフォーム" if lang == "ja" else "Contact form",
+               "読み込んでいます…" if lang == "ja" else "Loading…"))
 
 
 JA = """
@@ -73,7 +76,7 @@ JA = """
   {form}
 
   <p class="count">フォームが表示されない場合は、
-  <a href="{url}" target="_blank" rel="noopener">こちらのページ</a>から直接ご記入いただけます。</p>
+  <a href="{url}?hl=ja" target="_blank" rel="noopener">こちらのページ</a>から直接ご記入いただけます。</p>
 
   <div class="rev">2026-09-08</div>
 </article>
@@ -124,7 +127,7 @@ EN = """
   {form}
 
   <p class="count">If the form does not appear, you can open it
-  <a href="{url}" target="_blank" rel="noopener">directly here</a>.</p>
+  <a href="{url}?hl=en" target="_blank" rel="noopener">directly here</a>.</p>
 
   <div class="rev">8 September 2026</div>
 </article>
@@ -149,11 +152,11 @@ write("contact.html", page(
     "ja", "お問い合わせ — 世界死刑執行記録",
     "世界死刑執行記録へのお問い合わせフォーム。掲載内容の誤りのご指摘、削除のお申し出、"
     "取材・引用のご相談などを受け付けています。",
-    "contact.html", JA.format(form=embed(JA_FORM), url=JA_FORM),
+    "contact.html", JA.format(form=embed(JA_FORM, "ja"), url=JA_FORM),
     alt=("contact.html", "en/contact.html")))
 
 en_form = EN_FORM or JA_FORM
-en_body = EN.format(form=(("" if EN_FORM else EN_JA_NOTICE) + embed(en_form)), url=en_form)
+en_body = EN.format(form=(("" if EN_FORM else EN_JA_NOTICE) + embed(en_form, "en")), url=en_form)
 write("en/contact.html", page(
     "en", "Contact — World Execution Record",
     "Contact form for World Execution Record. Corrections to the records, removal requests, "
