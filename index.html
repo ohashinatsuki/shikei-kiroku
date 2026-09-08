@@ -105,6 +105,15 @@ a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 .ad-inner{border:1px dashed var(--rule-strong); background:var(--surface-2); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:2px; height:96px; color:var(--muted); font-family:var(--mono); font-size:11px; letter-spacing:.14em; margin:20px 0}
 .ad-inner b{font-size:10px; font-weight:500; opacity:.75}
 
+.mainnav{background:var(--surface); border-bottom:1px solid var(--rule)}
+.mainnav .wrap{display:flex; flex-wrap:wrap; gap:0 6px; padding:0 16px}
+.mainnav a{display:inline-flex; align-items:center; min-height:48px; padding:0 12px; font-size:15px; font-weight:500; color:var(--ink-2); border-bottom:3px solid transparent; letter-spacing:.02em}
+.mainnav a:hover{color:var(--accent); background:var(--surface-2); border-bottom-color:var(--rule-strong)}
+.mainnav a[aria-current="page"]{color:var(--ink); font-weight:700; border-bottom-color:var(--accent)}
+@media (max-width:480px){ .mainnav a{font-size:14px; padding:0 9px} }
+footer .nav{gap:2px 14px}
+footer .nav a{display:inline-block; padding:6px 0; font-size:13.5px}
+
 footer{padding:28px 0 48px; font-size:12px; color:var(--muted); line-height:1.9}
 footer .nav{display:flex; flex-wrap:wrap; gap:4px 16px; margin-bottom:10px}
 footer .nav a{font-size:12.5px; color:var(--ink-2); border-bottom:1px solid var(--rule-strong)}
@@ -126,6 +135,15 @@ footer b{color:var(--ink-2)}
     <div class="mm">日本時間 <span id="updated">—</span> 更新</div>
   </div>
 </header>
+<nav class="mainnav">
+  <div class="wrap">
+    <a href="./" aria-current="page">世界の記録</a>
+    <a href="japan.html">日本の記録</a>
+    <a href="yomimono.html">読み物</a>
+    <a href="about.html">編集方針</a>
+  </div>
+</nav>
+
 
 <main>
 <div class="wrap">
@@ -140,7 +158,7 @@ footer b{color:var(--ink-2)}
 
 <div class="wrap">
   <footer>
-    <div class="nav"><a href="japan.html">日本の死刑執行記録</a><a href="about.html">運営者情報・編集方針</a><a href="privacy.html">プライバシーポリシー</a></div>
+    <div class="nav"><a href="japan.html">日本の死刑執行記録</a><a href="yomimono.html">読み物</a><a href="about.html">運営者情報・編集方針</a><a href="privacy.html">プライバシーポリシー</a></div>
     <b>世界死刑執行記録</b> — 今日、世界のどこで、誰が死刑を執行されたかを日本時間で毎日記録する。掲載するのは出典で確認できた執行のみ。イランは公式発表が全体の1割程度、中国・北朝鮮・ベトナムは執行を公表しないため、実際の執行はこれより多い。
     <div class="srcs">
       <a href="https://hengaw.net/en" target="_blank" rel="noopener">Hengaw</a>
