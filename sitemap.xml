@@ -12,6 +12,10 @@
   <url><loc>https://shikei-kiroku.com/mayaku.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/enzai.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/yougo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/miseinen.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/josei.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/haishi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/kokuren.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://shikei-kiroku.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 </urlset>
