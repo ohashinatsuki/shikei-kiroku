@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本の死刑執行記録 — 世界死刑執行記録</title>
+<meta name="description" content="日本で死刑が執行された人の記録。2017年12月以降のすべての執行を、氏名・事件・執行場所・法務省の発表を出典として日付順に掲載しています。">
+<link rel="canonical" href="https://shikei-kiroku.com/japan.html">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="日本の死刑執行記録">
+<meta property="og:description" content="日本で死刑が執行された人の記録。2017年12月以降のすべての執行を出典つきで掲載。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="page.css">
+<style>
+.count{font-family:var(--mono); font-size:12px; color:var(--muted); margin-top:14px}
+.day{padding:22px 0 6px; border-bottom:1px solid var(--rule)}
+.day-head{display:flex; align-items:baseline; justify-content:space-between; gap:14px; padding-bottom:6px; border-bottom:1px solid var(--rule-strong)}
+.day-head h2{font-size:17px; letter-spacing:.02em; margin:0}
+.day-head .n{font-family:var(--mono); font-size:12.5px; font-weight:600; color:#8A3324; font-variant-numeric:tabular-nums; white-space:nowrap}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .day-head .n{color:#CE7C68}}
+:root[data-theme="dark"] .day-head .n{color:#CE7C68}
+.p{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.7fr) auto; gap:4px 18px; padding:10px 0; border-bottom:1px solid var(--rule); align-items:baseline}
+.p:last-child{border-bottom:0}
+.p .nm{font-family:var(--serif); font-size:15.5px; font-weight:500; line-height:1.5}
+.p .nm small{font-family:var(--sans); font-size:12px; color:var(--muted); font-weight:400; margin-left:6px; white-space:nowrap}
+.p .dt{font-size:13px; color:var(--ink-2); line-height:1.7}
+.p .dt .m{color:var(--ink); font-weight:500}
+.p .dt .pl{color:var(--muted)}
+.p .dt .sep{color:var(--rule-strong); margin:0 5px}
+.p .ex{grid-column:1 / -1; font-size:12px; color:var(--muted); line-height:1.65; margin-top:-2px}
+.p .meta{font-family:var(--mono); font-size:10.5px; color:var(--muted); text-align:right; white-space:nowrap; line-height:1.6}
+.p .meta a{color:var(--muted); border-bottom:1px solid var(--rule-strong)}
+.p .meta a:hover{color:var(--accent)}
+@media (max-width:600px){
+  .p{grid-template-columns:1fr; gap:2px}
+  .p .meta{text-align:left; white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand"><a href="./">世界死刑執行記録</a><small>WORLD EXECUTION RECORD</small></div>
+    <div class="mm">日本の記録</div>
+  </div>
+</header>
+
+<main class="wrap">
+<article>
+  <h1>日本の死刑執行記録</h1>
+
+  <p class="lead">日本で死刑が執行された人の記録です。法務大臣が執行のたびに開く臨時記者会見の発表を出典としています。日本の法務省が執行された人の氏名を公表するようになったのは2007年12月からで、このページはそのうち<b>2017年12月以降のすべての執行</b>を収めています。</p>
+
+  <div class="note">
+    日本の死刑は<b>絞首</b>により、東京・大阪・名古屋・広島・福岡・仙台・札幌の各拘置所で執行されます。執行は当日の朝に本人へ告知され、事前の予告はありません。執行後、法務大臣が記者会見を開き、氏名・年齢・執行場所を公表します。<br><br>
+    <b>年齢や執行場所が空欄の記録は、出典で確認できなかったものです。</b>推測では埋めていません。確認でき次第、追加します。
+  </div>
+
+  <div class="count" id="count">読み込み中…</div>
+  <div id="list"></div>
+
+  <h2>このページについて</h2>
+  <p>掲載しているのは、司法手続きを経て執行が確認された事例だけです。公判中の被告人や、死刑判決を受けたが執行されていない人は掲載していません。事件の記述は、量刑の理由となった事実に限っています。</p>
+  <p>2011年、2020年、2023年、2024年は、日本で死刑の執行が1件もありませんでした。執行がない年があるのは、法務大臣が命令を出さなかった期間があるためです。</p>
+  <p>詳しい編集方針は <a href="about.html">運営者情報・編集方針</a> をご覧ください。世界全体の日々の記録は <a href="./">記録トップ</a> にあります。</p>
+
+  <div class="rev">最終更新 2026-09-08</div>
+</article>
+</main>
+
+<div class="wrap">
+<footer>
+  <div class="nav">
+    <a href="./">記録トップ</a>
+    <a href="japan.html">日本の死刑執行記録</a>
+    <a href="about.html">運営者情報・編集方針</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+  </div>
+  <b>世界死刑執行記録</b> — 掲載するのは出典で確認できた執行のみ。
+</footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var WD = ['日','月','火','水','木','金','土'];
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function jp(k){
+    var p = k.split('-').map(Number);
+    var d = new Date(p[0], p[1]-1, p[2]);
+    return p[0]+'年'+p[1]+'月'+p[2]+'日（'+WD[d.getDay()]+'）';
+  }
+  function person(e){
+    var nm = esc(e.name) + (e.age ? '<small>' + e.age + '歳</small>' : '');
+    var dt = esc(e.charge) + '<span class="sep">｜</span><span class="m">' + esc(e.method) + '</span>' +
+             (e.place ? '<span class="sep">｜</span><span class="pl">' + esc(e.place) + '</span>' : '');
+    return '<div class="p"><div class="nm">' + nm + '</div>' +
+      '<div class="dt">' + dt + '</div>' +
+      '<div class="meta"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.src) + '</a></div>' +
+      (e.extra ? '<div class="ex">' + esc(e.extra) + '</div>' : '') + '</div>';
+  }
+  fetch('data.json?v=' + Date.now()).then(function(r){ return r.json(); }).then(function(DATA){
+    var rows = DATA.E.filter(function(e){ return e.c === 'Japan'; });
+    var days = {};
+    rows.forEach(function(e){ (days[e.d] = days[e.d] || []).push(e); });
+    var keys = Object.keys(days).sort().reverse();
+    var total = rows.length;
+    document.getElementById('count').textContent =
+      '記録 ' + total + '人 ／ 執行日 ' + keys.length + '日 ／ ' +
+      (keys.length ? keys[keys.length-1] + ' 〜 ' + keys[0] : '');
+    document.getElementById('list').innerHTML = keys.map(function(k){
+      return '<section class="day" id="d-' + k + '"><div class="day-head"><h2>' + jp(k) +
+        '</h2><span class="n">' + days[k].length + '人</span></div>' +
+        days[k].map(person).join('') + '</section>';
+    }).join('');
+  }).catch(function(){
+    document.getElementById('count').textContent = 'データを読み込めませんでした。時間をおいて再読み込みしてください。';
+  });
+})();
+</script>
+
+</body>
+</html>
