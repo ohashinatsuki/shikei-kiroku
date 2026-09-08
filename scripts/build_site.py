@@ -420,7 +420,8 @@ def main():
             print("  " + p)
     yomi = ["kiroku-no-yomikata.html", "sekai-no-ima.html", "iran.html", "saudi.html",
             "usa.html", "japan-tetsuzuki.html", "mayaku.html", "enzai.html", "yougo.html",
-            "miseinen.html", "josei.html", "haishi.html", "kokuren.html"]
+            "miseinen.html", "josei.html", "haishi.html", "kokuren.html",
+            "saishin-muzai.html", "usa-jinshu.html"]
     build_sitemap(yomi)
     print("  sitemap.xml")
     print("生成完了: 記録 %d件 / 日本時間 %s 時点" % (len(d["E"]), today))
