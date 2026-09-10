@@ -24,6 +24,7 @@ import html
 import io
 import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -97,7 +98,9 @@ def page(lang, title, desc, path, body, current="", alt=None):
         for h, t in nav)
     switch = ('<a class="lang" href="%sen/">English</a>' % base if lang == "ja"
               else '<a class="lang" href="%s">日本語</a>' % base)
-    canon = "%s/%s" % (SITE, "" if path == "index.html" else path)
+    # index.html は URL に出さない（/ と /en/ に統一。/en/index.html と二重に見られないため）
+    cpath = path[:-len("index.html")] if path.endswith("index.html") else path
+    canon = "%s/%s" % (SITE, cpath)
     alts = ""
     if alt:
         alts = ('<link rel="alternate" hreflang="ja" href="%s/%s">\n'
@@ -171,7 +174,7 @@ gtag('config', '{ga}', {{ anonymize_ip: true }});
 def person(e, lang):
     ja = lang == "ja"
     if e.get("name"):
-        nm = esc(e["name"]) + ('<small>%s</small>' % (("%d歳" % e["age"]) if ja else ("aged %d" % e["age"]))
+        nm = esc(e["name"] if ja else (e.get("name_en") or e["name"])) + ('<small>%s</small>' % (("%d歳" % e["age"]) if ja else ("aged %d" % e["age"]))
                                if e.get("age") else "")
     else:
         nm = ("氏名非公表<small>%d人</small>" % e["_n"] if ja
@@ -180,9 +183,10 @@ def person(e, lang):
     method = e.get("method_en") if not ja else e.get("method")
     place = e.get("place_en") if not ja else e.get("place")
     extra = e.get("extra_en") if not ja else e.get("extra")
-    dt = esc(charge) + '<span class="sep">｜</span><span class="m">%s</span>' % esc(method)
+    sep = '<span class="sep">%s</span>' % ("｜" if ja else "|")
+    dt = esc(charge) + sep + '<span class="m">%s</span>' % esc(method)
     if place:
-        dt += '<span class="sep">｜</span><span class="pl">%s</span>' % esc(place)
+        dt += sep + '<span class="pl">%s</span>' % esc(place)
     meta = ('<span class="t">%s JST</span>' % e["_time"] if e["_time"] else "")
     src = e.get("src_en") if not ja else e.get("src")
     meta += '<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(e["url"]), esc(src))
@@ -405,6 +409,26 @@ def build_sitemap(extra_pages):
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n%s</urlset>\n' % rows)
 
 
+JP_CHARS = re.compile(u"[぀-ヿ一-鿿！-～]")
+
+
+def check_en_pages():
+    """英語ページに日本語が1文字も残っていないか確認する。残っていれば止める。
+    言語切り替えリンクの「日本語」だけは意図した表示なので除外する。"""
+    bad = []
+    for fn in sorted(os.listdir(os.path.join(ROOT, "en"))):
+        if not fn.endswith(".html"):
+            continue
+        text = io.open(os.path.join(ROOT, "en", fn), encoding="utf-8").read()
+        text = text.replace('>日本語</a>', '></a>')
+        for i, line in enumerate(text.split("\n"), 1):
+            for m in JP_CHARS.finditer(line):
+                bad.append("en/%s %d行目: …%s…" % (fn, i, line[max(0, m.start() - 20):m.start() + 20]))
+                break
+    if bad:
+        sys.exit("英語ページに日本語が残っています:\n  " + "\n  ".join(bad))
+
+
 def main():
     d, ja_names = load()
     missing = [e for e in d["E"] if e.get("charge_en") is None]
@@ -427,6 +451,8 @@ def main():
             "saishin-muzai.html", "usa-jinshu.html", "lynch.html", "muzai-shikko.html"]
     build_sitemap(yomi)
     print("  sitemap.xml")
+    check_en_pages()
+    print("  英語ページに日本語なし: OK")
     print("生成完了: 記録 %d件 / 日本時間 %s 時点" % (len(d["E"]), today))
 
 

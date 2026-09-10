@@ -8,7 +8,8 @@
     python scripts/add_en.py
 
 足すフィールド:
-    charge_en / method_en / place_en / extra_en
+    charge_en / method_en / place_en / extra_en / src_en
+    name_en（日本の記録だけ。漢字の氏名をローマ字にする）
 
 対応表にない語が出てきたら、その場で止めて一覧を出す。
 勝手に推測して英語をでっち上げない。
@@ -145,6 +146,59 @@ SRC = {
     "アムネスティ日本／報道": "Amnesty International Japan / news reports",
 }
 
+# 氏名の英語表記。おもに日本の記録（漢字 → ローマ字）。英語版サイトで使う。
+# 読みは執行時の英語報道（Japan Times, Kyodo, NHK World など）に合わせる。
+# 表にない氏名が出てきたら止まるので、出典の英語表記を確認してから足すこと。
+NAME_EN = {
+    "加納 惠喜": "Keiki Kano",
+    "小林 薫": "Kaoru Kobayashi",
+    "金川 真大": "Masahiro Kanagawa",
+    "宮城 吉英": "Yoshihide Miyagi",
+    "濱崎 勝次": "Katsuji Hamasaki",
+    "熊谷 徳久": "Tokuhisa Kumagai",
+    "加賀山 領治": "Ryoji Kagayama",
+    "藤島 光雄": "Mitsuo Fujishima",
+    "川﨑 政則": "Masanori Kawasaki",
+    "小林 光弘": "Mitsuhiro Kobayashi",
+    "髙見澤 勤": "Tsutomu Takamizawa",
+    "神田 司": "Tsukasa Kanda",
+    "津田 寿美年": "Sumitoshi Tsuda",
+    "若林 一行": "Kazuyuki Wakabayashi",
+    "吉田 純子": "Junko Yoshida",
+    "鎌田 安利": "Yasutoshi Kamata",
+    "田尻 賢一": "Kenichi Tajiri",
+    "住田 紘一": "Koichi Sumida",
+    "西川 正勝": "Masakatsu Nishikawa",
+    "松井 喜代司": "Kiyoshi Matsui",
+    "関 光彦": "Teruhiko Seki",
+    "中川 智正": "Tomomasa Nakagawa",
+    "井上 嘉浩": "Yoshihiro Inoue",
+    "土谷 正実": "Masami Tsuchiya",
+    "新實 智光": "Tomomitsu Niimi",
+    "早川 紀代秀": "Kiyohide Hayakawa",
+    "松本 智津夫": "Chizuo Matsumoto",
+    "遠藤 誠一": "Seiichi Endo",
+    "岡崎 一明": "Kazuaki Okazaki",
+    "広瀬 健一": "Kenichi Hirose",
+    "林 泰男": "Yasuo Hayashi",
+    "横山 真人": "Masato Yokoyama",
+    "端本 悟": "Satoru Hashimoto",
+    "豊田 亨": "Toru Toyoda",
+    "岡本 啓三": "Keizo Okamoto",
+    "末森 博也": "Hiroya Suemori",
+    "庄子 幸一": "Koichi Shoji",
+    "鈴木 泰徳": "Yasunori Suzuki",
+    "魏 巍": "Wei Wei",
+    "小野川 光紀": "Mitsunori Onogawa",
+    "藤城 康孝": "Yasutaka Fujishiro",
+    "高根沢 智明": "Tomoaki Takanezawa",
+    "加藤 智大": "Tomohiro Kato",
+    "白石 隆浩": "Takahiro Shiraishi",
+    "高見 素直": "Sunao Takami",
+    # 日本以外でも、氏名に日本語の注が付いている場合はここに足す
+    "Mosayeb（姓は未報道）": "Mosayeb (surname not reported)",
+}
+
 from charges_en import CHARGE_EN as CHARGE
 
 
@@ -167,6 +221,13 @@ def main():
         e["extra_en"] = need(EXTRA, e.get("extra"), "extra", e, missing)
         e["charge_en"] = need(CHARGE, e.get("charge"), "charge", e, missing)
         e["src_en"] = need(SRC, e.get("src"), "src", e, missing)
+        # 日本の記録は必ず対応表を通す。日本以外は名前がもともとローマ字なので、
+        # 対応表にあるときだけ置き換える（日本語の注が付いている場合など）
+        nm = e.get("name") or ""
+        if e["c"] == "Japan" and nm:
+            e["name_en"] = need(NAME_EN, nm, "name", e, missing)
+        else:
+            e["name_en"] = NAME_EN.get(nm, nm)
     if missing:
         print("対応表にない語があります。翻訳を足してください。\n")
         for f, vals in missing.items():
