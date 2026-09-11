@@ -23,6 +23,8 @@ CHARGE_EN = {
         "1994 Matsumoto sarin attack and the 1995 Tokyo subway sarin attack",
 
     # --- 米国 ---
+    "1996年、フロリダ州南西部で21歳の男性を誘拐して絞殺":
+        "Kidnapped and strangled a 21-year-old man in southwest Florida in 1996",
     "1976年8月、フロリダ州ボニータスプリングスで交際を断られた16歳の少女を射殺し、友人2人に重傷":
         "Shot dead a 16-year-old girl who had rejected him and seriously wounded "
         "two of her friends in Bonita Springs, Florida, in August 1976",
@@ -119,7 +121,12 @@ CHARGE_EN = {
         "A participant in the January 2026 protests (the “Alihani Square” case), "
         "convicted of moharebeh, corruption on earth and destruction of public "
         "property. Of Afghan origin",
+    "2026年1月の抗議行動参加者。モハーレベ（神への敵対）":
+        "A participant in the January 2026 protests, convicted of moharebeh "
+        "(enmity against God)",
     "2人を殺害。アフガニスタン国籍": "Killed two people. Afghan national",
+    "故意の殺人": "Premeditated murder",
+    "故意の殺人。女性": "Premeditated murder. A woman",
     "いとこの殺害（キサース）": "Murder of his cousin (qisas)",
     "武装強盗によるモハーレベ（神への敵対）":
         "Moharebeh (enmity against God) through armed robbery",

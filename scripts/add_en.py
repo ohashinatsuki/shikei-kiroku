@@ -26,6 +26,7 @@ METHOD = {
     "絞首": "Hanging",
     "非公表（サウジは通常、斬首）": "Not disclosed (Saudi Arabia generally uses beheading)",
     "薬物注射（3剤・エトミデート）": "Lethal injection (three-drug, etomidate)",
+    "薬物注射（3剤）": "Lethal injection (three-drug)",
     "銃殺": "Firing squad",
 }
 
@@ -41,6 +42,7 @@ PLACE = {
     "ゴム中央刑務所": "Qom Central Prison",
     "ゴルガーン刑務所（ゴレスターン州）": "Gorgan Prison, Golestan Province",
     "サナンダジ中央刑務所": "Sanandaj Central Prison",
+    "シャフルード刑務所（セムナーン州）": "Shahrud Prison, Semnan Province",
     "サブゼヴァール中央刑務所": "Sabzevar Central Prison",
     "サーリー中央刑務所": "Sari Central Prison",
     "ザーヘダーン中央刑務所": "Zahedan Central Prison",
@@ -58,6 +60,7 @@ PLACE = {
     "バーボル中央刑務所": "Babol Central Prison",
     "フロリダ州立刑務所（スターク）": "Florida State Prison, Starke",
     "ホッラマーバード中央刑務所": "Khorramabad Central Prison",
+    "ベフシャフル中央刑務所": "Behshahr Central Prison",
     "ボルージェルド刑務所": "Borujerd Prison",
     "マシュハド刑務所": "Mashhad Prison",
     "マークー中央刑務所": "Maku Central Prison",
@@ -96,6 +99,28 @@ EXTRA = {
     "ゴンバデ・カーヴース出身。4人の子の父。":
         "From Gonbad-e Kavus. A father of four.",
     "サーヴェ出身。": "From Saveh.",
+    "2026年1月の抗議行動で逮捕された。当局の発表はなく、遺体の即時引き渡しも拒まれた。":
+        "He was arrested during the January 2026 protests. The authorities made no "
+        "announcement, and the prison refused to hand his body over to his family "
+        "immediately.",
+    "夫を殺害したとして5年前に逮捕された。当局の発表はない。":
+        "She had been arrested five years earlier in connection with the killing of "
+        "her husband. The authorities made no announcement.",
+    "母の交際相手を殺害したとして4年前に逮捕された。":
+        "He had been arrested four years earlier on a charge of killing his mother's "
+        "partner.",
+    "出典により氏名の表記が異なる（HRANA: Ezzat Asgari Galugahi／Hengaw: Asgari Khalilshahr）。当局の発表はない。":
+        "The sources render the name differently (HRANA: Ezzat Asgari Galugahi; "
+        "Hengaw: Asgari Khalilshahr). The authorities made no announcement.",
+    "イーラーンシャフル出身のバルーチ人。5人の子の父。":
+        "A Baloch man from Iranshahr. A father of five.",
+    "ナジャファーバード出身。3年前に逮捕された。":
+        "From Najafabad. He was arrested three years earlier.",
+    "バンダレ・アッバース出身。3人の子の父。":
+        "From Bandar Abbas. A father of three.",
+    "「ホッグ・トレイル連続殺人」と呼ばれた一連の事件の1件。フロリダ州で今年15件目。":
+        "One of the series of killings known as the “Hog Trail Murders”. The 15th "
+        "execution in Florida this year.",
     "シンガポール国籍。CNBの発表は年齢・国籍のみで、氏名は現地報道による":
         "Singaporean national. The Central Narcotics Bureau announced only age and nationality; the name comes from local reporting.",
     "マレーシア国籍。氏名は現地報道による":
@@ -131,7 +156,9 @@ SRC = {
     "サウジ通信（SPA）": "Saudi Press Agency (SPA)",
     "CBS Miami／DPIC": "CBS Miami / DPIC",
     "WUSF／DPIC": "WUSF / DPIC",
+    "WUSF（AP）": "WUSF (AP)",
     "Hands Off Cain（AP）": "Hands Off Cain (AP)",
+    "HRANA": "HRANA (Human Rights Activists News Agency)",
     "Hengaw": "Hengaw",
     "Hengaw／Death Penalty News": "Hengaw / Death Penalty News",
     "IHRNGO": "Iran Human Rights (IHRNGO)",
