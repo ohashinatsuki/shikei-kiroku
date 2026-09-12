@@ -16,6 +16,7 @@ r"""消防庁の災害情報から、災害ごとの死者・行方不明者を�
 """
 import io
 import json
+import time
 import os
 import re
 import sys
@@ -90,9 +91,18 @@ def list_disasters(year):
 
 
 RE_HOU = re.compile(r"第\s*([0-9０-９]{1,3})\s*報")
+# 「◯月◯日現在 19,787 2,549 …」と数字が並ぶ形式（東日本大震災など）。
+# 表の見出し（死者／行方不明者）は、PDFの取り出し順では数字の後ろに来ることがある。
+# 見出しを当てにせず、「現在」の直後に並ぶ最初の2つの数字を、死者と行方不明者として読む。
+RE_TABLE = re.compile(
+    r"日現在\s+([0-9][0-9,，]*)\s+([0-9][0-9,，]*)\s+[0-9]")
 RE_ASOF = re.compile(r"(令和\s*[0-9０-９]+\s*年\s*[0-9０-９]+\s*月\s*[0-9０-９]+\s*日)")
+# 内訳の見出しは資料によって ≪ ≫ 《 》 【 】 とばらつく。「死者数の内訳」もある
 RE_UCHI = re.compile(
-    r"≪死者の内訳≫(.{0,800}?)(?:⑵|[２3３]\s*[　 ]*(?:避難|消防|被害|都道府県)|$)", re.S)
+    r"[≪《]\s*死者(?:数)?の内訳\s*[≫》](.{0,1200}?)"
+    r"(?:⑵|[○➣]|[２3３]\s*[　 ]*(?:避難|消防|被害|都道府県)|$)", re.S)
+# 「合　計 273 1,203 …」のように、合計行のあとに数字が並ぶ形式
+RE_GOKEI = re.compile(r"合\s*[　 ]*計\s+([0-9][0-9,，]*)\s+([0-9][0-9,，]*)")
 # 内訳の中の「八代市２０人」「宇城市３人」
 RE_CITY = re.compile(r"([一-龥ぁ-んァ-ヶ]{1,12}?[市区町村])\s*([0-9０-９]{1,4})\s*人")
 # 「行方不明者◯人」と文章で書かれることがある
@@ -135,8 +145,23 @@ def read_report(url):
     m = RE_MISS.search(re.sub(r"[\s　]+", "", t))
     if m:
         v = int(z2h(m.group(1)))
-        if v < 10000:
+        if v < 100000:
             miss = v
+
+    def _i(x):
+        return int(z2h(x).replace(",", "").replace("，", ""))
+
+    # 内訳が無く、表に数字が並ぶ形式（東日本大震災など）。
+    # 「死者」と「行方不明者」の両方が資料にあるときだけ読む
+    if dead is None and "死者" in t and "行方" in t:
+        m = RE_TABLE.search(t)
+        if m:
+            dead = _i(m.group(1))
+            miss = _i(m.group(2))
+
+    # 「合　計」の行から読む方式は使わない。
+    # 列の並びが資料ごとに違い、負傷者を死者と取り違えることがあるため。
+    # 自動で取れない災害は、原典を読んで手で shi.json に入れる（推測しない）。
 
     return {"dead": dead, "missing": miss, "report": hou, "asof": asof,
             "detail": detail, "breakdown": breakdown, "url": url}
@@ -158,6 +183,7 @@ def main():
     print("%s年の災害 %d件" % (year, len(rows)))
     got = 0
     for date, name, hou, url in rows:
+        time.sleep(0.4)   # 相手のサーバーに負担をかけない
         try:
             r = read_report(url)
         except Exception as e:

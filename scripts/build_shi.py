@@ -240,6 +240,8 @@ def block_saigai(saigai):
         meta = "第%s報" % r["report"] if r.get("report") else ""
         if r.get("asof"):
             meta += "（%s 時点）" % esc(r["asof"])
+        if r.get("manual"):
+            meta += "　被害報を読んで手で入力"
         out.append(
             '<div class="sg">'
             '<div class="sg-h"><div class="sg-n">%s</div><div class="sg-v">%s</div></div>'
@@ -257,6 +259,9 @@ def block_saigai(saigai):
     地震・台風・豪雨・大雪などで亡くなった方。消防庁が災害ごとに出す被害報から取りました。
     数字は速報で、あとから変わります。<b>何報の時点のものか</b>を各行に書いてあります。
     市区町村ごとの内訳は、被害報に書かれているものをそのまま載せています。
+    古い災害は被害報の書式が違い、自動で読み取れないものがあります。
+    その分は被害報を開いて手で入力しました。各行に印をつけてあります。
+    読み取れなかったものは載せていません。推測では埋めません。
   </p>
   <div class="sgs">%s</div>
 </div></section>
