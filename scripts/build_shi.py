@@ -217,6 +217,52 @@ def block_trend(traffic):
 """ % (jdate(days[0]), jdate(days[-1]), n(tot), bars)
 
 
+# ---------------- 災害 ----------------
+
+def block_saigai(saigai):
+    """災害ごとの死者。消防庁の被害報から。日付の新しい順。"""
+    if not saigai:
+        return ""
+    rows = sorted(saigai.values(), key=lambda r: r.get("date", ""), reverse=True)
+    out = []
+    for r in rows:
+        dead = r.get("dead") or 0
+        miss = r.get("missing") or 0
+        if not dead and not miss:
+            continue
+        nums = '<b>%s</b>人' % n(dead) if dead else ""
+        if miss:
+            nums += ('　行方不明 %s人' % n(miss)) if nums else ('行方不明 <b>%s</b>人' % n(miss))
+        bd = ""
+        if r.get("breakdown"):
+            bd = '<div class="bd">%s</div>' % "　".join(
+                "%s %s人" % (esc(b["place"]), n(b["n"])) for b in r["breakdown"])
+        meta = "第%s報" % r["report"] if r.get("report") else ""
+        if r.get("asof"):
+            meta += "（%s 時点）" % esc(r["asof"])
+        out.append(
+            '<div class="sg">'
+            '<div class="sg-h"><div class="sg-n">%s</div><div class="sg-v">%s</div></div>'
+            '<div class="sg-d">%s</div>%s'
+            '<div class="sg-m">%s <a href="%s" target="_blank" rel="noopener">被害報</a></div>'
+            '</div>'
+            % (esc(r.get("name", "")), nums, esc(r.get("date", "")), bd,
+               meta, esc(r.get("url", ""))))
+    if not out:
+        return ""
+    return """
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>災害ごとの死</h2></div>
+  <p class="lede">
+    地震・台風・豪雨・大雪などで亡くなった方。消防庁が災害ごとに出す被害報から取りました。
+    数字は速報で、あとから変わります。<b>何報の時点のものか</b>を各行に書いてあります。
+    市区町村ごとの内訳は、被害報に書かれているものをそのまま載せています。
+  </p>
+  <div class="sgs">%s</div>
+</div></section>
+""" % "".join(out)
+
+
 # ---------------- 載っていないもの ----------------
 
 def block_gaps():
@@ -347,6 +393,18 @@ HEAD = """<!DOCTYPE html>
   font-variant-numeric:tabular-nums}}
 .fact td.n.b{{font-weight:600; color:var(--executed)}}
 .fact td.sub{{color:var(--muted); font-size:11.5px; text-align:right}}
+.sgs{{max-width:640px; display:flex; flex-direction:column; gap:2px}}
+.sg{{padding:14px 0; border-bottom:1px solid var(--rule)}}
+.sg-h{{display:flex; align-items:baseline; justify-content:space-between; gap:14px}}
+.sg-n{{font-family:var(--serif); font-size:15.5px; font-weight:700; line-height:1.45}}
+.sg-v{{font-family:var(--mono); font-size:13px; color:var(--ink-2); white-space:nowrap;
+  font-variant-numeric:tabular-nums}}
+.sg-v b{{font-size:17px; color:var(--executed)}}
+.sg-d{{font-family:var(--mono); font-size:11px; color:var(--muted); margin-top:3px}}
+.sg .bd{{font-size:12px; color:var(--ink-2); margin-top:7px; line-height:1.85;
+  padding-left:11px; border-left:2px solid var(--rule)}}
+.sg-m{{font-family:var(--mono); font-size:10.5px; color:var(--muted); margin-top:6px}}
+.sg-m a{{color:var(--muted); border-bottom:1px solid var(--rule-strong)}}
 .gaps{{max-width:640px; display:flex; flex-direction:column; gap:20px}}
 .gap{{padding-left:14px; border-left:2px solid var(--rule-strong)}}
 .gap h3{{font-size:14px; margin-bottom:5px}}
@@ -417,6 +475,7 @@ def main():
             + block_perday(yearly)
             + block_facts(yearly)
             + block_pref(traffic)
+            + block_saigai(d.get("saigai", {}))
             + block_gaps()
             + block_src(yearly, traffic))
 
