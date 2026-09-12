@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>日本の死｜世界死刑執行記録</title>
+<meta name="description" content="日本で、どんな死が、一日あたり何人あるか。交通事故・自殺・火災・山岳遭難・水難など、役所が公表した数字だけを、出典と時点を明記してまとめています。">
+<link rel="canonical" href="https://shikei-kiroku.com/shi.html">
+<meta property="og:title" content="日本の死｜世界死刑執行記録">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.today{background:var(--surface); border:1px solid var(--rule); border-top:3px solid var(--executed);
+  border-radius:3px; padding:26px; max-width:560px}
+.today .d{font-family:var(--mono); font-size:12px; color:var(--muted); letter-spacing:.08em}
+.today .n{font-family:var(--serif); font-size:clamp(40px,11vw,68px); font-weight:700;
+  line-height:1.05; color:var(--executed); font-variant-numeric:tabular-nums}
+.today .n small{font-family:var(--sans); font-size:18px; font-weight:500; color:var(--ink); margin-left:6px}
+.today .k{font-size:15px; margin-top:4px}
+.today .def{font-size:12.5px; color:var(--muted); margin-top:14px; padding-top:12px;
+  border-top:1px solid var(--rule); line-height:1.9}
+.lede{color:var(--muted); font-size:13px; margin:0 0 24px; max-width:640px; line-height:1.9}
+.rows{display:flex; flex-direction:column; gap:2px; max-width:640px}
+.row{display:grid; grid-template-columns:1fr auto; gap:10px; align-items:baseline;
+  padding:11px 0; border-bottom:1px solid var(--rule)}
+.row .nm{font-size:14.5px}
+.row .nm em{font-style:normal; color:var(--muted); font-size:11.5px; display:block; margin-top:2px}
+.row .v{font-family:var(--mono); font-size:16px; font-weight:600;
+  font-variant-numeric:tabular-nums; white-space:nowrap}
+.row .v span{font-family:var(--sans); font-size:11px; font-weight:400; color:var(--muted); margin-left:3px}
+.bar{grid-column:1/-1; height:4px; background:var(--surface-2); border-radius:2px;
+  overflow:hidden; margin-top:3px}
+.bar i{display:block; height:100%; background:var(--accent)}
+.row.big .v{color:var(--executed)} .row.big .bar i{background:var(--executed)}
+.tblwrap{overflow-x:auto}
+.tblwrap table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:420px}
+.tblwrap th,.tblwrap td{padding:7px 8px; border-bottom:1px solid var(--rule); text-align:left}
+.tblwrap th{font-size:11px; color:var(--muted); font-weight:500; letter-spacing:.06em}
+.tblwrap th.r{text-align:right}
+.tblwrap td.n{font-family:var(--mono); text-align:right; font-variant-numeric:tabular-nums}
+.tblwrap td.n.z{color:var(--muted)}
+.tblwrap td.n.hit{color:var(--executed); font-weight:600}
+.tblwrap td.sub{color:var(--muted); font-size:12px}
+.up{color:var(--executed)} .dn{color:var(--accent)}
+.trend{display:flex; align-items:flex-end; gap:3px; height:120px; max-width:640px;
+  border-bottom:1px solid var(--rule-strong); padding-bottom:2px}
+.trend .c{flex:1; display:flex; flex-direction:column; justify-content:flex-end;
+  align-items:center; height:100%; min-width:0}
+.trend .c i{display:block; width:100%; background:var(--executed); border-radius:1px 1px 0 0; min-height:2px}
+.trend .c span{font-family:var(--mono); font-size:8.5px; color:var(--muted); margin-top:3px}
+.src{font-size:12.5px; color:var(--ink-2); max-width:640px; padding-left:1.2em}
+.src li{margin-bottom:9px}
+.src a{color:var(--accent)}
+</style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CS3LBG96H8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CS3LBG96H8', { anonymize_ip: true });
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="brand">世界死刑執行記録<small>WORLD EXECUTION RECORD</small></div>
+    <div class="mm"><a class="lang" href="en/">English</a></div>
+  </div>
+</header>
+
+<nav class="mainnav">
+  <div class="wrap"><a href="./">世界の記録</a><a href="japan.html">日本の記録</a><a href="shi.html" aria-current="page">日本の死</a><a href="archive.html">記録アーカイブ</a><a href="yomimono.html">読み物</a><a href="about.html">編集方針</a><a href="contact.html">お問い合わせ</a></div>
+</nav>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>日本の死</h2></div>
+  <p class="lede">
+    日本で、どんな死が、どれくらいあるか。役所が公表した数字だけを集めています。
+    <b>死が確定したものだけ</b>を載せます。けがをした方や、救急車で運ばれた方の数は載せません。
+    人の名前は載りません。役所が名前を伏せて公表しているものだけを扱うためです。
+  </p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>いちばん新しい日</h2></div>
+  <p class="lede">毎日の実数が出るのは交通事故だけです。ほかは月ごと・年ごとに更新されます。</p>
+  <div class="today">
+    <div class="d">2026年9月10日（木）</div>
+    <div class="n">8<small>人</small></div>
+    <div class="k">交通事故で亡くなった方（全国）</div>
+    <div class="def">
+      事故から<b>24時間以内</b>に亡くなった方の数です。30日以内で数えると、これより多くなります。<br>
+      1月1日からの累計 <b>1,608人</b>。前年同期は 1,641人で、33人少ない。
+    </div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>この30日</h2></div>
+  <p class="lede">交通事故で亡くなった方の、日ごとの人数。2026年8月12日（水） から 2026年9月10日（木） まで。合計 169人。</p>
+  <div class="trend"><div class="c"><i style="height:40.0%"></i><span>12</span></div><div class="c"><i style="height:100.0%"></i><span>13</span></div><div class="c"><i style="height:90.0%"></i><span>14</span></div><div class="c"><i style="height:40.0%"></i><span>15</span></div><div class="c"><i style="height:20.0%"></i><span>16</span></div><div class="c"><i style="height:40.0%"></i><span>17</span></div><div class="c"><i style="height:70.0%"></i><span>18</span></div><div class="c"><i style="height:60.0%"></i><span>19</span></div><div class="c"><i style="height:90.0%"></i><span>20</span></div><div class="c"><i style="height:20.0%"></i><span>21</span></div><div class="c"><i style="height:50.0%"></i><span>22</span></div><div class="c"><i style="height:50.0%"></i><span>23</span></div><div class="c"><i style="height:80.0%"></i><span>24</span></div><div class="c"><i style="height:60.0%"></i><span>25</span></div><div class="c"><i style="height:60.0%"></i><span>26</span></div><div class="c"><i style="height:40.0%"></i><span>27</span></div><div class="c"><i style="height:60.0%"></i><span>28</span></div><div class="c"><i style="height:40.0%"></i><span>29</span></div><div class="c"><i style="height:40.0%"></i><span>30</span></div><div class="c"><i style="height:50.0%"></i><span>31</span></div><div class="c"><i style="height:70.0%"></i><span>1</span></div><div class="c"><i style="height:70.0%"></i><span>2</span></div><div class="c"><i style="height:40.0%"></i><span>3</span></div><div class="c"><i style="height:90.0%"></i><span>4</span></div><div class="c"><i style="height:50.0%"></i><span>5</span></div><div class="c"><i style="height:30.0%"></i><span>6</span></div><div class="c"><i style="height:20.0%"></i><span>7</span></div><div class="c"><i style="height:60.0%"></i><span>8</span></div><div class="c"><i style="height:80.0%"></i><span>9</span></div><div class="c"><i style="height:80.0%"></i><span>10</span></div></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>一日あたり、何人</h2></div>
+  <p class="lede">
+    更新の速さも桁もばらばらなので、すべて「一日あたり」に直しました。こうすると比べられます。
+    年間の公表値を365で割った<b>計算値</b>で、公表値そのものではありません。
+  </p>
+  <div class="rows"><div class="row"><div class="nm">がん（悪性新生物）<em>2024年 384,099人</em></div><div class="v">1,052<span>人</span></div><div class="bar"><i style="width:100.000%"></i></div></div><div class="row"><div class="nm">心疾患<em>2024年 226,277人</em></div><div class="v">620<span>人</span></div><div class="bar"><i style="width:58.911%"></i></div></div><div class="row"><div class="nm">老衰<em>2024年 206,882人</em></div><div class="v">567<span>人</span></div><div class="bar"><i style="width:53.862%"></i></div></div><div class="row big"><div class="nm">自殺<em>2025年 19,188人</em></div><div class="v">52.6<span>人</span></div><div class="bar"><i style="width:4.996%"></i></div></div><div class="row big"><div class="nm">交通事故<em>2025年 2,547人</em></div><div class="v">7.0<span>人</span></div><div class="bar"><i style="width:0.663%"></i></div></div><div class="row big"><div class="nm">火災<em>2024年 1,436人</em></div><div class="v">3.9<span>人</span></div><div class="bar"><i style="width:0.374%"></i></div></div><div class="row big"><div class="nm">山岳遭難<em>2025年 332人</em></div><div class="v">0.9<span>人</span></div><div class="bar"><i style="width:0.150%"></i></div></div></div>
+  <p class="lede" style="margin:26px 0 0">
+    いちばん多いものを100として棒を引いています。上のいくつかと下のいくつかでは、桁が二つ違います。
+    毎日ニュースになる死と、ならない死の差がこれです。
+  </p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>都道府県別</h2></div>
+  <p class="lede">交通事故で亡くなった方。2026年9月10日（木） の当日と、1月1日からの累計。
+  北海道は方面本部ごとに分かれています。</p>
+  <div class="tblwrap"><table>
+    <thead><tr><th>都道府県</th><th class="r">当日</th><th class="r">今年</th>
+      <th class="r">前年</th><th class="r">差</th></tr></thead>
+    <tbody><tr><td>札幌</td><td class="n z">—</td><td class="n">40</td><td class="n sub">35</td><td class="n sub"><span class="up">+5</span></td></tr><tr><td>函館</td><td class="n z">—</td><td class="n">8</td><td class="n sub">4</td><td class="n sub"><span class="up">+4</span></td></tr><tr><td>旭川</td><td class="n z">—</td><td class="n">6</td><td class="n sub">9</td><td class="n sub"><span class="dn">-3</span></td></tr><tr><td>釧路</td><td class="n hit">1</td><td class="n">13</td><td class="n sub">21</td><td class="n sub"><span class="dn">-8</span></td></tr><tr><td>北見</td><td class="n z">—</td><td class="n">3</td><td class="n sub">12</td><td class="n sub"><span class="dn">-9</span></td></tr><tr><td>青森</td><td class="n z">—</td><td class="n">19</td><td class="n sub">15</td><td class="n sub"><span class="up">+4</span></td></tr><tr><td>岩手</td><td class="n z">—</td><td class="n">31</td><td class="n sub">23</td><td class="n sub"><span class="up">+8</span></td></tr><tr><td>宮城</td><td class="n z">—</td><td class="n">23</td><td class="n sub">23</td><td class="n sub">±0</td></tr><tr><td>秋田</td><td class="n hit">1</td><td class="n">16</td><td class="n sub">17</td><td class="n sub"><span class="dn">-1</span></td></tr><tr><td>山形</td><td class="n z">—</td><td class="n">10</td><td class="n sub">13</td><td class="n sub"><span class="dn">-3</span></td></tr><tr><td>福島</td><td class="n hit">1</td><td class="n">37</td><td class="n sub">37</td><td class="n sub">±0</td></tr><tr><td>茨城</td><td class="n z">—</td><td class="n">75</td><td class="n sub">52</td><td class="n sub"><span class="up">+23</span></td></tr><tr><td>栃木</td><td class="n z">—</td><td class="n">36</td><td class="n sub">45</td><td class="n sub"><span class="dn">-9</span></td></tr><tr><td>群馬</td><td class="n z">—</td><td class="n">23</td><td class="n sub">30</td><td class="n sub"><span class="dn">-7</span></td></tr><tr><td>埼玉</td><td class="n z">—</td><td class="n">64</td><td class="n sub">71</td><td class="n sub"><span class="dn">-7</span></td></tr><tr><td>千葉</td><td class="n z">—</td><td class="n">79</td><td class="n sub">79</td><td class="n sub">±0</td></tr><tr><td>東京</td><td class="n z">—</td><td class="n">82</td><td class="n sub">94</td><td class="n sub"><span class="dn">-12</span></td></tr><tr><td>神奈川</td><td class="n z">—</td><td class="n">89</td><td class="n sub">87</td><td class="n sub"><span class="up">+2</span></td></tr><tr><td>新潟</td><td class="n z">—</td><td class="n">30</td><td class="n sub">37</td><td class="n sub"><span class="dn">-7</span></td></tr><tr><td>山梨</td><td class="n z">—</td><td class="n">7</td><td class="n sub">13</td><td class="n sub"><span class="dn">-6</span></td></tr><tr><td>長野</td><td class="n z">—</td><td class="n">28</td><td class="n sub">29</td><td class="n sub"><span class="dn">-1</span></td></tr><tr><td>静岡</td><td class="n z">—</td><td class="n">44</td><td class="n sub">40</td><td class="n sub"><span class="up">+4</span></td></tr><tr><td>富山</td><td class="n z">—</td><td class="n">19</td><td class="n sub">17</td><td class="n sub"><span class="up">+2</span></td></tr><tr><td>石川</td><td class="n z">—</td><td class="n">13</td><td class="n sub">18</td><td class="n sub"><span class="dn">-5</span></td></tr><tr><td>福井</td><td class="n z">—</td><td class="n">15</td><td class="n sub">16</td><td class="n sub"><span class="dn">-1</span></td></tr><tr><td>岐阜</td><td class="n z">—</td><td class="n">33</td><td class="n sub">38</td><td class="n sub"><span class="dn">-5</span></td></tr><tr><td>愛知</td><td class="n z">—</td><td class="n">85</td><td class="n sub">73</td><td class="n sub"><span class="up">+12</span></td></tr><tr><td>三重</td><td class="n z">—</td><td class="n">44</td><td class="n sub">38</td><td class="n sub"><span class="up">+6</span></td></tr><tr><td>滋賀</td><td class="n z">—</td><td class="n">21</td><td class="n sub">36</td><td class="n sub"><span class="dn">-15</span></td></tr><tr><td>京都</td><td class="n z">—</td><td class="n">23</td><td class="n sub">36</td><td class="n sub"><span class="dn">-13</span></td></tr><tr><td>大阪</td><td class="n z">—</td><td class="n">75</td><td class="n sub">79</td><td class="n sub"><span class="dn">-4</span></td></tr><tr><td>兵庫</td><td class="n hit">1</td><td class="n">80</td><td class="n sub">64</td><td class="n sub"><span class="up">+16</span></td></tr><tr><td>奈良</td><td class="n z">—</td><td class="n">19</td><td class="n sub">17</td><td class="n sub"><span class="up">+2</span></td></tr><tr><td>和歌山</td><td class="n z">—</td><td class="n">22</td><td class="n sub">22</td><td class="n sub">±0</td></tr><tr><td>鳥取</td><td class="n z">—</td><td class="n">5</td><td class="n sub">8</td><td class="n sub"><span class="dn">-3</span></td></tr><tr><td>島根</td><td class="n z">—</td><td class="n">10</td><td class="n sub">12</td><td class="n sub"><span class="dn">-2</span></td></tr><tr><td>岡山</td><td class="n z">—</td><td class="n">37</td><td class="n sub">29</td><td class="n sub"><span class="up">+8</span></td></tr><tr><td>広島</td><td class="n z">—</td><td class="n">32</td><td class="n sub">41</td><td class="n sub"><span class="dn">-9</span></td></tr><tr><td>山口</td><td class="n hit">1</td><td class="n">28</td><td class="n sub">22</td><td class="n sub"><span class="up">+6</span></td></tr><tr><td>徳島</td><td class="n hit">1</td><td class="n">15</td><td class="n sub">14</td><td class="n sub"><span class="up">+1</span></td></tr><tr><td>香川</td><td class="n z">—</td><td class="n">16</td><td class="n sub">15</td><td class="n sub"><span class="up">+1</span></td></tr><tr><td>愛媛</td><td class="n z">—</td><td class="n">24</td><td class="n sub">33</td><td class="n sub"><span class="dn">-9</span></td></tr><tr><td>高知</td><td class="n z">—</td><td class="n">20</td><td class="n sub">13</td><td class="n sub"><span class="up">+7</span></td></tr><tr><td>福岡</td><td class="n hit">1</td><td class="n">64</td><td class="n sub">53</td><td class="n sub"><span class="up">+11</span></td></tr><tr><td>佐賀</td><td class="n z">—</td><td class="n">14</td><td class="n sub">10</td><td class="n sub"><span class="up">+4</span></td></tr><tr><td>長崎</td><td class="n hit">1</td><td class="n">11</td><td class="n sub">19</td><td class="n sub"><span class="dn">-8</span></td></tr><tr><td>熊本</td><td class="n z">—</td><td class="n">35</td><td class="n sub">30</td><td class="n sub"><span class="up">+5</span></td></tr><tr><td>大分</td><td class="n z">—</td><td class="n">21</td><td class="n sub">26</td><td class="n sub"><span class="dn">-5</span></td></tr><tr><td>宮崎</td><td class="n z">—</td><td class="n">19</td><td class="n sub">25</td><td class="n sub"><span class="dn">-6</span></td></tr><tr><td>鹿児島</td><td class="n z">—</td><td class="n">20</td><td class="n sub">26</td><td class="n sub"><span class="dn">-6</span></td></tr><tr><td>沖縄</td><td class="n z">—</td><td class="n">25</td><td class="n sub">25</td><td class="n sub">±0</td></tr></tbody>
+  </table></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>出典</h2></div>
+  <p class="lede">このページは、役所が公表した数字だけを載せます。時点と定義を必ず書きます。</p>
+  <ul class="src"><li>交通事故（日ごと・都道府県別）— 交通事故総合分析センター／警察庁交通企画課まとめ <a href="https://www.itarda.or.jp/report/2026-09-10" target="_blank" rel="noopener">交通事故死者日報</a>（2026-09-10 分）</li><li>交通事故（年間） — 警察庁「令和7年中の交通事故死者数について」2026年1月6日公表。事故から24時間以内に亡くなった方 <a href="https://www.npa.go.jp/news/release/2026/20260106001jiko.html" target="_blank" rel="noopener">警察庁</a></li><li>自殺 — 警察庁「令和7年中における自殺の状況」確定値、2026年3月27日公表。男13,176人・女6,012人 <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/jisatsu_year.html" target="_blank" rel="noopener">厚生労働省</a></li><li>山岳遭難 — 警察庁「令和7年における山岳遭難の概況等」。死者と行方不明者を合わせた数 <a href="https://www.npa.go.jp/publications/statistics/safetylife/sounan.html" target="_blank" rel="noopener">警察庁</a></li><li>火災 — 総務省消防庁、令和6年（2024年）の火災による死者 <a href="https://www.fdma.go.jp/pressrelease/statistics/" target="_blank" rel="noopener">消防庁</a></li><li>がん・心疾患・老衰 — 厚生労働省 人口動態統計、令和6年（2024年）の死因別死亡数 <a href="https://www.mhlw.go.jp/toukei/list/81-1a.html" target="_blank" rel="noopener">厚生労働省</a></li></ul>
+</div></section>
+
+<div class="wrap">
+<footer>
+  <div class="nav"><a href="./">世界の記録</a><a href="japan.html">日本の記録</a><a href="shi.html">日本の死</a><a href="archive.html">記録アーカイブ</a><a href="yomimono.html">読み物</a><a href="about.html">編集方針</a><a href="contact.html">お問い合わせ</a><a href="privacy.html">プライバシーポリシー</a></div>
+  <b>世界死刑執行記録</b> — 掲載するのは出典で確認できた数字のみ。
+</footer>
+</div>
+
+</body>
+</html>

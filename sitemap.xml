@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://shikei-kiroku.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://shikei-kiroku.com/japan.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://shikei-kiroku.com/shi.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/archive.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/yomimono.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://shikei-kiroku.com/about.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>

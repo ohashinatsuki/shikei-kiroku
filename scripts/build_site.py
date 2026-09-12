@@ -79,7 +79,8 @@ def jmonth(k, lang):
 
 # ---------------- 見た目 ----------------
 
-NAV_JA = [("./", "世界の記録"), ("japan.html", "日本の記録"), ("archive.html", "記録アーカイブ"),
+NAV_JA = [("./", "世界の記録"), ("japan.html", "日本の記録"), ("shi.html", "日本の死"),
+          ("archive.html", "記録アーカイブ"),
           ("yomimono.html", "読み物"), ("about.html", "編集方針"),
           ("contact.html", "お問い合わせ")]
 NAV_EN = [("./", "Today"), ("japan.html", "Japan"), ("archive.html", "Archive"),
@@ -396,7 +397,7 @@ def write(path, text):
 
 
 def build_sitemap(extra_pages):
-    urls = ["", "japan.html", "archive.html", "yomimono.html", "about.html",
+    urls = ["", "japan.html", "shi.html", "archive.html", "yomimono.html", "about.html",
             "contact.html", "privacy.html",
             "en/", "en/japan.html", "en/archive.html", "en/about.html",
             "en/contact.html", "en/privacy.html"] + extra_pages
