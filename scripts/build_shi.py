@@ -116,6 +116,35 @@ def block_perday(yearly):
 """ % "".join(out)
 
 
+# ---------------- 数字の奥にあるもの ----------------
+
+def block_facts(yearly):
+    """年次の資料に書かれている内訳。原典のPDFから直接読んだものだけを載せる。"""
+    gs = yearly.get("facts", [])
+    if not gs:
+        return ""
+    out = []
+    for g in gs:
+        tr = "".join(
+            '<tr><td>%s</td><td class="n b">%s</td><td class="sub">%s</td></tr>'
+            % (esc(a), esc(b), esc(c)) for a, b, c in g["rows"])
+        out.append(
+            '<div class="fact"><h3>%s<em>%s</em></h3>'
+            '<div class="tblwrap"><table><tbody>%s</tbody></table></div>'
+            '<p class="fsrc">%s</p></div>'
+            % (esc(g["g"]), esc(g["year"]), tr, esc(g["src"])))
+    return """
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>数字の奥にあるもの</h2></div>
+  <p class="lede">
+    役所の資料には、合計のほかに内訳が書かれています。そこだけを抜き出しました。
+    書かれていないことは足していません。
+  </p>
+  %s
+</div></section>
+""" % "".join(out)
+
+
 # ---------------- 都道府県 ----------------
 
 ORDER = ["札幌", "函館", "旭川", "釧路", "北見",
@@ -266,6 +295,17 @@ HEAD = """<!DOCTYPE html>
   align-items:center; height:100%; min-width:0}}
 .trend .c i{{display:block; width:100%; background:var(--executed); border-radius:1px 1px 0 0; min-height:2px}}
 .trend .c span{{font-family:var(--mono); font-size:8.5px; color:var(--muted); margin-top:3px}}
+.fact{{max-width:640px; margin-bottom:30px; padding-bottom:6px}}
+.fact h3{{font-size:15px; margin-bottom:10px}}
+.fact h3 em{{font-style:normal; font-family:var(--mono); font-size:11px;
+  color:var(--muted); margin-left:8px; letter-spacing:.06em}}
+.fact table{{min-width:0}}
+.fact td{{padding:8px 8px 8px 0}}
+.fact td.n{{font-family:var(--mono); text-align:right; white-space:nowrap;
+  font-variant-numeric:tabular-nums}}
+.fact td.n.b{{font-weight:600; color:var(--executed)}}
+.fact td.sub{{color:var(--muted); font-size:11.5px; text-align:right}}
+.fsrc{{font-size:11px; color:var(--muted); margin:8px 0 0}}
 .src{{font-size:12.5px; color:var(--ink-2); max-width:640px; padding-left:1.2em}}
 .src li{{margin-bottom:9px}}
 .src a{{color:var(--accent)}}
@@ -329,6 +369,7 @@ def main():
     body = (block_today(traffic)
             + block_trend(traffic)
             + block_perday(yearly)
+            + block_facts(yearly)
             + block_pref(traffic)
             + block_src(yearly, traffic))
 
