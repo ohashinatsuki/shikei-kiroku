@@ -217,6 +217,48 @@ def block_trend(traffic):
 """ % (jdate(days[0]), jdate(days[-1]), n(tot), bars)
 
 
+# ---------------- 載っていないもの ----------------
+
+def block_gaps():
+    """何を載せていないか、なぜ載せないかを書く。
+    これを書かないと、読者はこのページを『日本の死の全部』だと思ってしまう。"""
+    return """
+<section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>このページに載っていないもの</h2></div>
+  <p class="lede">
+    このページは、日本の死の全部ではありません。載せていないものと、その理由を書いておきます。
+  </p>
+  <div class="gaps">
+    <div class="gap">
+      <h3>一人ひとりの記録</h3>
+      <p>いつ、どこで、どんな人が、どう亡くなったか。それを全国分・一件ずつ集めた資料は、
+      日本の役所にありません。労働災害の事例集は2018年で止まっており、
+      一件ずつの山岳遭難を毎週出しているのは長野県警だけです。
+      新聞から集めれば全国そろいますが、名前が入り、記事が消えると出典も消えます。
+      このサイトは役所の公表だけを使うと決めているので、載せません。</p>
+    </div>
+    <div class="gap">
+      <h3>けがをした方、運ばれた方</h3>
+      <p>死が確定したものだけを載せます。負傷者数や、熱中症で救急車に運ばれた方の数は、
+      死者数ではないので載せません。</p>
+    </div>
+    <div class="gap">
+      <h3>殺人</h3>
+      <p>逮捕された段階の事件は載せません。不起訴や無罪になることがあり、
+      そのとき記録だけが残ってしまうためです。役所が出しているのは月ごとの件数で、
+      一件ずつの内訳ではありません。</p>
+    </div>
+    <div class="gap">
+      <h3>時点のそろっていない数字</h3>
+      <p>公表の時期が死因ごとに違うため、この表の年はそろっていません。
+      交通事故と自殺は2025年、火災は2023年です。年をまたいで足し算はできません。
+      各行に年を書いてあります。</p>
+    </div>
+  </div>
+</div></section>
+"""
+
+
 # ---------------- 出典 ----------------
 
 def block_src(yearly, traffic):
@@ -305,6 +347,10 @@ HEAD = """<!DOCTYPE html>
   font-variant-numeric:tabular-nums}}
 .fact td.n.b{{font-weight:600; color:var(--executed)}}
 .fact td.sub{{color:var(--muted); font-size:11.5px; text-align:right}}
+.gaps{{max-width:640px; display:flex; flex-direction:column; gap:20px}}
+.gap{{padding-left:14px; border-left:2px solid var(--rule-strong)}}
+.gap h3{{font-size:14px; margin-bottom:5px}}
+.gap p{{margin:0; font-size:13px; color:var(--ink-2); line-height:1.95}}
 .fsrc{{font-size:11px; color:var(--muted); margin:8px 0 0}}
 .src{{font-size:12.5px; color:var(--ink-2); max-width:640px; padding-left:1.2em}}
 .src li{{margin-bottom:9px}}
@@ -371,6 +417,7 @@ def main():
             + block_perday(yearly)
             + block_facts(yearly)
             + block_pref(traffic)
+            + block_gaps()
             + block_src(yearly, traffic))
 
     out = HEAD.format(site=SITE, ga=GA) + body + FOOT

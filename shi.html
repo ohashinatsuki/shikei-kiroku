@@ -62,6 +62,10 @@
   font-variant-numeric:tabular-nums}
 .fact td.n.b{font-weight:600; color:var(--executed)}
 .fact td.sub{color:var(--muted); font-size:11.5px; text-align:right}
+.gaps{max-width:640px; display:flex; flex-direction:column; gap:20px}
+.gap{padding-left:14px; border-left:2px solid var(--rule-strong)}
+.gap h3{font-size:14px; margin-bottom:5px}
+.gap p{margin:0; font-size:13px; color:var(--ink-2); line-height:1.95}
 .fsrc{font-size:11px; color:var(--muted); margin:8px 0 0}
 .src{font-size:12.5px; color:var(--ink-2); max-width:640px; padding-left:1.2em}
 .src li{margin-bottom:9px}
@@ -123,7 +127,7 @@ gtag('config', 'G-CS3LBG96H8', { anonymize_ip: true });
     更新の速さも桁もばらばらなので、すべて「一日あたり」に直しました。こうすると比べられます。
     年間の公表値を365で割った<b>計算値</b>で、公表値そのものではありません。
   </p>
-  <div class="rows"><div class="row"><div class="nm">がん（悪性新生物）<em>2024年 384,099人</em></div><div class="v">1,052<span>人</span></div><div class="bar"><i style="width:100.000%"></i></div></div><div class="row"><div class="nm">心疾患<em>2024年 226,277人</em></div><div class="v">620<span>人</span></div><div class="bar"><i style="width:58.911%"></i></div></div><div class="row"><div class="nm">老衰<em>2024年 206,882人</em></div><div class="v">567<span>人</span></div><div class="bar"><i style="width:53.862%"></i></div></div><div class="row big"><div class="nm">自殺<em>2025年 19,188人</em></div><div class="v">52.6<span>人</span></div><div class="bar"><i style="width:4.996%"></i></div></div><div class="row big"><div class="nm">交通事故<em>2025年 2,547人</em></div><div class="v">7.0<span>人</span></div><div class="bar"><i style="width:0.663%"></i></div></div><div class="row big"><div class="nm">火災<em>2024年 1,436人</em></div><div class="v">3.9<span>人</span></div><div class="bar"><i style="width:0.374%"></i></div></div><div class="row big"><div class="nm">水難<em>2025年 760人</em></div><div class="v">2.1<span>人</span></div><div class="bar"><i style="width:0.198%"></i></div></div><div class="row big"><div class="nm">労働災害<em>2025年 700人</em></div><div class="v">1.9<span>人</span></div><div class="bar"><i style="width:0.182%"></i></div></div><div class="row big"><div class="nm">山岳遭難<em>2025年 332人</em></div><div class="v">0.9<span>人</span></div><div class="bar"><i style="width:0.150%"></i></div></div></div>
+  <div class="rows"><div class="row"><div class="nm">がん（悪性新生物）<em>2024年 384,099人</em></div><div class="v">1,052<span>人</span></div><div class="bar"><i style="width:100.000%"></i></div></div><div class="row"><div class="nm">心疾患<em>2024年 226,277人</em></div><div class="v">620<span>人</span></div><div class="bar"><i style="width:58.911%"></i></div></div><div class="row"><div class="nm">老衰<em>2024年 206,882人</em></div><div class="v">567<span>人</span></div><div class="bar"><i style="width:53.862%"></i></div></div><div class="row big"><div class="nm">自殺<em>2025年 19,188人</em></div><div class="v">52.6<span>人</span></div><div class="bar"><i style="width:4.996%"></i></div></div><div class="row big"><div class="nm">交通事故<em>2025年 2,547人</em></div><div class="v">7.0<span>人</span></div><div class="bar"><i style="width:0.663%"></i></div></div><div class="row big"><div class="nm">火災<em>2023年 1,503人</em></div><div class="v">4.1<span>人</span></div><div class="bar"><i style="width:0.391%"></i></div></div><div class="row big"><div class="nm">水難<em>2025年 760人</em></div><div class="v">2.1<span>人</span></div><div class="bar"><i style="width:0.198%"></i></div></div><div class="row big"><div class="nm">労働災害<em>2025年 700人</em></div><div class="v">1.9<span>人</span></div><div class="bar"><i style="width:0.182%"></i></div></div><div class="row big"><div class="nm">山岳遭難<em>2025年 332人</em></div><div class="v">0.9<span>人</span></div><div class="bar"><i style="width:0.150%"></i></div></div></div>
   <p class="lede" style="margin:26px 0 0">
     いちばん多いものを100として棒を引いています。上のいくつかと下のいくつかでは、桁が二つ違います。
     毎日ニュースになる死と、ならない死の差がこれです。
@@ -136,7 +140,7 @@ gtag('config', 'G-CS3LBG96H8', { anonymize_ip: true });
     役所の資料には、合計のほかに内訳が書かれています。そこだけを抜き出しました。
     書かれていないことは足していません。
   </p>
-  <div class="fact"><h3>山岳遭難<em>2025年</em></h3><div class="tblwrap"><table><tbody><tr><td>死者・行方不明者</td><td class="n b">332人</td><td class="sub">前年より32人多い</td></tr><tr><td>そのうち40歳以上</td><td class="n b">304人</td><td class="sub">全体の91.6%</td></tr><tr><td>そのうち60歳以上</td><td class="n b">221人</td><td class="sub">全体の66.6%</td></tr><tr><td>単独で登った人の死亡・不明率</td><td class="n b">15.3%</td><td class="sub">遭難者1,367人のうち209人</td></tr><tr><td>2人以上で登った人の死亡・不明率</td><td class="n b">5.5%</td><td class="sub">単独のほうが9.8ポイント高い</td></tr><tr><td>最も多い都道府県</td><td class="n b">長野県 358件</td><td class="sub">次いで北海道199件、山梨県192件</td></tr><tr><td>最も多い態様</td><td class="n b">道迷い 30.9%</td><td class="sub">次いで転倒19.2%、滑落17.3%</td></tr></tbody></table></div><p class="fsrc">警察庁「令和7年における山岳遭難の概況等」2026年6月18日公表</p></div><div class="fact"><h3>水難<em>2025年</em></h3><div class="tblwrap"><table><tbody><tr><td>死者・行方不明者</td><td class="n b">760人</td><td class="sub">前年より56人少ない</td></tr><tr><td>そのうち中学生以下</td><td class="n b">27人</td><td class="sub"></td></tr><tr><td>最も多い場所</td><td class="n b">海 352人</td><td class="sub">46.3%</td></tr><tr><td>次に多い場所</td><td class="n b">河川 282人</td><td class="sub">37.1%</td></tr><tr><td>最も多い行為</td><td class="n b">魚とり・釣り 168人</td><td class="sub">22.1%</td></tr><tr><td>中学生以下で最も多い行為</td><td class="n b">水遊び 11人</td><td class="sub">27人のうち40.7%</td></tr><tr><td>最も多い都道府県（発生件数）</td><td class="n b">東京都 131件</td><td class="sub">次いで沖縄県114件、兵庫県77件</td></tr></tbody></table></div><p class="fsrc">警察庁「令和7年における水難の概況等」2026年6月18日公表</p></div>
+  <div class="fact"><h3>自殺<em>2025年</em></h3><div class="tblwrap"><table><tbody><tr><td>総数</td><td class="n b">19,188人</td><td class="sub">前年より1,132人少ない</td></tr><tr><td>男</td><td class="n b">13,176人</td><td class="sub">全体の68.7%</td></tr><tr><td>女</td><td class="n b">6,012人</td><td class="sub">全体の31.3%</td></tr><tr><td>最も多い年齢層</td><td class="n b">50代 3,743人</td><td class="sub">次いで40代2,968人</td></tr><tr><td>19歳以下</td><td class="n b">830人</td><td class="sub">前年より30人多い</td></tr><tr><td>最も多い原因・動機</td><td class="n b">健康問題 17,178件</td><td class="sub">次いで経済・生活問題11,355件</td></tr><tr><td>家庭問題</td><td class="n b">4,201件</td><td class="sub"></td></tr><tr><td>勤務問題</td><td class="n b">5,387件</td><td class="sub"></td></tr></tbody></table></div><p class="fsrc">厚生労働省・警察庁「令和7年中における自殺の状況」2026年3月27日公表。原因・動機は1人につき最大4つまで計上するため、合計は人数と一致しない</p></div><div class="fact"><h3>山岳遭難<em>2025年</em></h3><div class="tblwrap"><table><tbody><tr><td>死者・行方不明者</td><td class="n b">332人</td><td class="sub">前年より32人多い</td></tr><tr><td>そのうち40歳以上</td><td class="n b">304人</td><td class="sub">全体の91.6%</td></tr><tr><td>そのうち60歳以上</td><td class="n b">221人</td><td class="sub">全体の66.6%</td></tr><tr><td>単独で登った人の死亡・不明率</td><td class="n b">15.3%</td><td class="sub">遭難者1,367人のうち209人</td></tr><tr><td>2人以上で登った人の死亡・不明率</td><td class="n b">5.5%</td><td class="sub">単独のほうが9.8ポイント高い</td></tr><tr><td>最も多い都道府県</td><td class="n b">長野県 358件</td><td class="sub">次いで北海道199件、山梨県192件</td></tr><tr><td>最も多い態様</td><td class="n b">道迷い 30.9%</td><td class="sub">次いで転倒19.2%、滑落17.3%</td></tr></tbody></table></div><p class="fsrc">警察庁「令和7年における山岳遭難の概況等」2026年6月18日公表</p></div><div class="fact"><h3>水難<em>2025年</em></h3><div class="tblwrap"><table><tbody><tr><td>死者・行方不明者</td><td class="n b">760人</td><td class="sub">前年より56人少ない</td></tr><tr><td>そのうち中学生以下</td><td class="n b">27人</td><td class="sub"></td></tr><tr><td>最も多い場所</td><td class="n b">海 352人</td><td class="sub">46.3%</td></tr><tr><td>次に多い場所</td><td class="n b">河川 282人</td><td class="sub">37.1%</td></tr><tr><td>最も多い行為</td><td class="n b">魚とり・釣り 168人</td><td class="sub">22.1%</td></tr><tr><td>中学生以下で最も多い行為</td><td class="n b">水遊び 11人</td><td class="sub">27人のうち40.7%</td></tr><tr><td>最も多い都道府県（発生件数）</td><td class="n b">東京都 131件</td><td class="sub">次いで沖縄県114件、兵庫県77件</td></tr></tbody></table></div><p class="fsrc">警察庁「令和7年における水難の概況等」2026年6月18日公表</p></div><div class="fact"><h3>火災<em>2023年</em></h3><div class="tblwrap"><table><tbody><tr><td>死者（放火自殺者等を含む）</td><td class="n b">1,503人</td><td class="sub"></td></tr><tr><td>放火自殺者等を除く</td><td class="n b">1,228人</td><td class="sub">前年より33人多い</td></tr><tr><td>建物火災の死者</td><td class="n b">1,200人</td><td class="sub">全体の79.8%</td></tr><tr><td>そのうち住宅火災</td><td class="n b">1,023人</td><td class="sub">放火自殺者等を除く</td></tr><tr><td>65歳以上</td><td class="n b">906人</td><td class="sub">全体の73.8%</td></tr><tr><td>逃げ遅れ</td><td class="n b">38.7%</td><td class="sub">住宅火災では415人で最多</td></tr><tr><td>建物火災の死因で最も多いもの</td><td class="n b">一酸化炭素中毒・窒息 36.5%</td><td class="sub"></td></tr></tbody></table></div><p class="fsrc">総務省消防庁「令和6年版 消防白書」令和5年中の数字</p></div>
 </div></section>
 
 <section class="sec"><div class="wrap">
@@ -151,9 +155,43 @@ gtag('config', 'G-CS3LBG96H8', { anonymize_ip: true });
 </div></section>
 
 <section class="sec"><div class="wrap">
+  <div class="sec-h"><h2>このページに載っていないもの</h2></div>
+  <p class="lede">
+    このページは、日本の死の全部ではありません。載せていないものと、その理由を書いておきます。
+  </p>
+  <div class="gaps">
+    <div class="gap">
+      <h3>一人ひとりの記録</h3>
+      <p>いつ、どこで、どんな人が、どう亡くなったか。それを全国分・一件ずつ集めた資料は、
+      日本の役所にありません。労働災害の事例集は2018年で止まっており、
+      一件ずつの山岳遭難を毎週出しているのは長野県警だけです。
+      新聞から集めれば全国そろいますが、名前が入り、記事が消えると出典も消えます。
+      このサイトは役所の公表だけを使うと決めているので、載せません。</p>
+    </div>
+    <div class="gap">
+      <h3>けがをした方、運ばれた方</h3>
+      <p>死が確定したものだけを載せます。負傷者数や、熱中症で救急車に運ばれた方の数は、
+      死者数ではないので載せません。</p>
+    </div>
+    <div class="gap">
+      <h3>殺人</h3>
+      <p>逮捕された段階の事件は載せません。不起訴や無罪になることがあり、
+      そのとき記録だけが残ってしまうためです。役所が出しているのは月ごとの件数で、
+      一件ずつの内訳ではありません。</p>
+    </div>
+    <div class="gap">
+      <h3>時点のそろっていない数字</h3>
+      <p>公表の時期が死因ごとに違うため、この表の年はそろっていません。
+      交通事故と自殺は2025年、火災は2023年です。年をまたいで足し算はできません。
+      各行に年を書いてあります。</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
   <div class="sec-h"><h2>出典</h2></div>
   <p class="lede">このページは、役所が公表した数字だけを載せます。時点と定義を必ず書きます。</p>
-  <ul class="src"><li>交通事故（日ごと・都道府県別）— 交通事故総合分析センター／警察庁交通企画課まとめ <a href="https://www.itarda.or.jp/report/2026-09-10" target="_blank" rel="noopener">交通事故死者日報</a>（2026-09-10 分）</li><li>交通事故（年間） — 警察庁「令和7年中の交通事故死者数について」2026年1月6日公表。事故から24時間以内に亡くなった方 <a href="https://www.npa.go.jp/news/release/2026/20260106001jiko.html" target="_blank" rel="noopener">警察庁</a></li><li>自殺 — 警察庁「令和7年中における自殺の状況」確定値、2026年3月27日公表。男13,176人・女6,012人 <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/jisatsu_year.html" target="_blank" rel="noopener">厚生労働省</a></li><li>山岳遭難 — 警察庁「令和7年における山岳遭難の概況等」2026年6月18日公表。死者と行方不明者を合わせた数 <a href="https://www.npa.go.jp/publications/statistics/safetylife/r07_sangakusounan_gaikyou.pdf" target="_blank" rel="noopener">警察庁（PDF）</a></li><li>水難 — 警察庁「令和7年における水難の概況等」2026年6月18日公表。死者と行方不明者を合わせた数 <a href="https://www.npa.go.jp/publications/statistics/safetylife/r07_suinan_gaikyou.pdf" target="_blank" rel="noopener">警察庁（PDF）</a></li><li>労働災害 — 厚生労働省「令和7年の労働災害発生状況」。死亡者700人、前年より46人少なく過去最少 <a href="https://www.mhlw.go.jp/stf/newpage_73382.html" target="_blank" rel="noopener">厚生労働省</a></li><li>火災 — 総務省消防庁、令和6年（2024年）の火災による死者 <a href="https://www.fdma.go.jp/pressrelease/statistics/" target="_blank" rel="noopener">消防庁</a></li><li>がん・心疾患・老衰 — 厚生労働省 人口動態統計、令和6年（2024年）の死因別死亡数 <a href="https://www.mhlw.go.jp/toukei/list/81-1a.html" target="_blank" rel="noopener">厚生労働省</a></li></ul>
+  <ul class="src"><li>交通事故（日ごと・都道府県別）— 交通事故総合分析センター／警察庁交通企画課まとめ <a href="https://www.itarda.or.jp/report/2026-09-10" target="_blank" rel="noopener">交通事故死者日報</a>（2026-09-10 分）</li><li>交通事故（年間） — 警察庁「令和7年中の交通事故死者数について」2026年1月6日公表。事故から24時間以内に亡くなった方 <a href="https://www.npa.go.jp/news/release/2026/20260106001jiko.html" target="_blank" rel="noopener">警察庁</a></li><li>自殺 — 警察庁「令和7年中における自殺の状況」確定値、2026年3月27日公表。男13,176人・女6,012人 <a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/jisatsu_year.html" target="_blank" rel="noopener">厚生労働省</a></li><li>山岳遭難 — 警察庁「令和7年における山岳遭難の概況等」2026年6月18日公表。死者と行方不明者を合わせた数 <a href="https://www.npa.go.jp/publications/statistics/safetylife/r07_sangakusounan_gaikyou.pdf" target="_blank" rel="noopener">警察庁（PDF）</a></li><li>水難 — 警察庁「令和7年における水難の概況等」2026年6月18日公表。死者と行方不明者を合わせた数 <a href="https://www.npa.go.jp/publications/statistics/safetylife/r07_suinan_gaikyou.pdf" target="_blank" rel="noopener">警察庁（PDF）</a></li><li>労働災害 — 厚生労働省「令和7年の労働災害発生状況」。死亡者700人、前年より46人少なく過去最少 <a href="https://www.mhlw.go.jp/stf/newpage_73382.html" target="_blank" rel="noopener">厚生労働省</a></li><li>がん・心疾患・老衰 — 厚生労働省 人口動態統計、令和6年（2024年）の死因別死亡数 <a href="https://www.mhlw.go.jp/toukei/list/81-1a.html" target="_blank" rel="noopener">厚生労働省</a></li><li>火災 — 総務省消防庁「令和6年版 消防白書」。令和5年（2023年）中の火災による死者（放火自殺者等を含む） <a href="https://www.fdma.go.jp/publication/hakusho/r6/chapter1/section1/para1/67986.html" target="_blank" rel="noopener">消防庁</a></li></ul>
 </div></section>
 
 <div class="wrap">
