@@ -163,6 +163,11 @@ CHARGE_EN = {
         "Smuggling hashish, as a repeat offender (ta'zir)",
     "ハシシの密輸（タアズィール刑）。オマーン国籍":
         "Smuggling hashish (ta'zir). Omani national",
+    "ハシシの密輸（タアズィール刑）。エチオピア国籍":
+        "Smuggling hashish (ta'zir). Ethiopian national",
+    "アンフェタミン錠剤とハシシの密輸、治安要員の殺害未遂（ハッド刑）":
+        "Smuggling amphetamine tablets and hashish, and the attempted killing of "
+        "security officers (hadd)",
     "ハシシ・規制薬物錠剤の密輸（タアズィール刑）":
         "Smuggling hashish and controlled-substance tablets (ta'zir)",
     "ヘロインの密輸（タアズィール刑）。パキスタン国籍":
@@ -177,6 +182,11 @@ CHARGE_EN = {
         "Beat a fellow Yemeni to death with a sharp implement (qisas). Yemeni national",
     "妻と娘を就寝中に刃物で殺害（ハッド刑）":
         "Killed his wife and daughter with a blade as they slept (hadd)",
+    "刃物で刺して殺害（キサース）。ミャンマー国籍":
+        "Stabbed a man to death with a sharp implement (qisas). Myanmar national",
+    "テロ関連の罪（外国人労働者の殺害、武器の所持、殺害の計画）（タアズィール刑）。パキスタン国籍":
+        "Terrorism-related offences — killing a migrant worker, possession of "
+        "weapons and planning further killings (ta'zir). Pakistani national",
     "娘婿の殺害": "Murder of his son-in-law",
     "母親を銃で殺害（タアズィール刑）": "Shot and killed his mother (ta'zir)",
 

@@ -31,21 +31,27 @@ METHOD = {
 }
 
 PLACE = {
+    "アシール州": "Asir Province",
     "アルダビール中央刑務所": "Ardabil Central Prison",
     "アーデルアーバード刑務所（シーラーズ）": "Adelabad Prison, Shiraz",
     "イスファハーン中央刑務所": "Isfahan Central Prison",
+    "イーラーンシャフル中央刑務所": "Iranshahr Central Prison",
     "イスファハーン中央（ダストゲルド）刑務所": "Isfahan Central (Dastgerd) Prison",
     "イーラーム中央刑務所": "Ilam Central Prison",
+    "カスィーム州": "Qassim Province",
     "カラジ中央刑務所": "Karaj Central Prison",
     "ガルナダ軍事刑務所（シャハート、東部）": "Gharnada Military Prison, Shahhat (eastern Libya)",
     "ゲゼルヘサール刑務所（カラジ）": "Ghezel Hesar Prison, Karaj",
     "ゴム中央刑務所": "Qom Central Prison",
     "ゴルガーン刑務所（ゴレスターン州）": "Gorgan Prison, Golestan Province",
+    "ジャウフ州": "Jouf Province",
+    "ジーロフト刑務所（ケルマーン州）": "Jiroft Prison, Kerman Province",
     "サナンダジ中央刑務所": "Sanandaj Central Prison",
     "シャフルード刑務所（セムナーン州）": "Shahrud Prison, Semnan Province",
     "サブゼヴァール中央刑務所": "Sabzevar Central Prison",
     "サーリー中央刑務所": "Sari Central Prison",
     "ザーヘダーン中央刑務所": "Zahedan Central Prison",
+    "ザーボル中央刑務所": "Zabol Central Prison",
     "シーラーズ刑務所（ファールス州）": "Shiraz Prison, Fars Province",
     "ジーザーン州": "Jazan Province",
     "セピーダール刑務所（アフヴァーズ）": "Sepidar Prison, Ahvaz",
@@ -99,6 +105,30 @@ EXTRA = {
     "ゴンバデ・カーヴース出身。4人の子の父。":
         "From Gonbad-e Kavus. A father of four.",
     "サーヴェ出身。": "From Saveh.",
+    "ゼハク出身。2年前に逮捕された。":
+        "From Zehak County. He was arrested two years earlier.",
+    "ゼハク出身。2人の子の父。2年前に逮捕された。":
+        "From Zehak County. A father of two. He was arrested two years earlier.",
+    "ザラーバード出身のバルーチ人。3人の子の父。4年前に逮捕された。":
+        "A Baloch man from Zarabad County. A father of three. He was arrested four "
+        "years earlier.",
+    "ザーヘダーン出身のバルーチ人。イーラーンシャフル在住。":
+        "A Baloch man from Zahedan, resident in Iranshahr.",
+    "バルーチ人。当局の発表はない。":
+        "A Baloch man. The authorities made no announcement.",
+    "サッゲズ（クルディスタン州）出身のクルド人。2人の子の父。3年前に逮捕された。":
+        "A Kurdish man from Saqqez, Kurdistan Province. A father of two. He was "
+        "arrested three years earlier.",
+    "ザーボル出身のバルーチ人。2019年にイスファハーンで逮捕された。当局の発表はない。":
+        "A Baloch man from Zabol. He was arrested in Isfahan in 2019. The "
+        "authorities made no announcement.",
+    "同じ事件で3人が同日に執行された。":
+        "Three people convicted in the same case were executed on the same day.",
+    "兄弟2人が同日に執行された。":
+        "Two brothers were executed on the same day.",
+    "CNBの発表は年齢・国籍のみで、氏名は公表されていない":
+        "The Central Narcotics Bureau announced only age and nationality; the name "
+        "has not been made public.",
     "2026年1月の抗議行動で逮捕された。当局の発表はなく、遺体の即時引き渡しも拒まれた。":
         "He was arrested during the January 2026 protests. The authorities made no "
         "announcement, and the prison refused to hand his body over to his family "
@@ -162,6 +192,7 @@ SRC = {
     "Hengaw": "Hengaw",
     "Hengaw／Death Penalty News": "Hengaw / Death Penalty News",
     "IHRNGO": "Iran Human Rights (IHRNGO)",
+    "KHRN（クルディスタン人権ネットワーク）": "Kurdistan Human Rights Network (KHRN)",
     "IHRNGO／Death Penalty News": "Iran Human Rights (IHRNGO) / Death Penalty News",
     "Iran HRM": "Iran Human Rights Monitor",
     "NCRI": "NCRI",
