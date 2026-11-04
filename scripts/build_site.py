@@ -36,6 +36,20 @@ MON_EN = ["January", "February", "March", "April", "May", "June",
           "July", "August", "September", "October", "November", "December"]
 WINDOW = 21          # トップに出す日数
 MIN_DATE = "2026-08-15"   # 日々の記録の開始日（これ以前は日本の過去分だけ）
+STATE = json.load(io.open(os.path.join(ROOT, "state", "seen.json"), encoding="utf-8"))
+REVIEWED_THROUGH = STATE.get("last_run", "")
+
+
+def coverage_note(lang):
+    from_day = (datetime.date.fromisoformat(REVIEWED_THROUGH)
+                + datetime.timedelta(days=1)).isoformat()
+    if lang == "ja":
+        msg = ("%s以降の記録は追補中です。掲載人数は確認済みの一部で、"
+               "「調査中」は執行がなかったことを意味しません。" % from_day)
+    else:
+        msg = ("Records after %s are being researched. Published counts are partial; "
+               "'under review' does not mean that no execution occurred." % REVIEWED_THROUGH)
+    return '<p class="coverage" role="status">%s</p>' % esc(msg)
 
 
 def esc(s):
@@ -185,9 +199,14 @@ def person(e, lang):
     place = e.get("place_en") if not ja else e.get("place")
     extra = e.get("extra_en") if not ja else e.get("extra")
     sep = '<span class="sep">%s</span>' % ("｜" if ja else "|")
-    dt = esc(charge) + sep + '<span class="m">%s</span>' % esc(method)
+    parts = []
+    if charge:
+        parts.append(esc(charge))
+    if method:
+        parts.append('<span class="m">%s</span>' % esc(method))
     if place:
-        dt += sep + '<span class="pl">%s</span>' % esc(place)
+        parts.append('<span class="pl">%s</span>' % esc(place))
+    dt = sep.join(parts)
     meta = ('<span class="t">%s JST</span>' % e["_time"] if e["_time"] else "")
     src = e.get("src_en") if not ja else e.get("src")
     meta += '<a href="%s" target="_blank" rel="noopener">%s</a>' % (esc(e["url"]), esc(src))
@@ -248,7 +267,8 @@ def build_index(d, ja_names, lang, today):
                 "local evening, which is the following morning in Japan. Records are added "
                 "as soon as they are confirmed.")
         today_html = (head + '<div class="ans">%s</div><div class="hint">%s</div>'
-                      % ("まだ確認されていません" if lang == "ja" else "None confirmed yet", hint))
+                      % (("調査中" if lang == "ja" else "Under review") if tkey > REVIEWED_THROUGH
+                         else ("まだ確認されていません" if lang == "ja" else "None confirmed yet"), hint))
 
     out = ""
     cur = today - datetime.timedelta(days=1)
@@ -258,10 +278,14 @@ def build_index(d, ja_names, lang, today):
             h, total, _o, _g = day_block(days[k], lang, ja_names)
             out += ('<section class="day" id="d-%s"><div class="day-head"><h2>%s</h2>'
                     '<span class="n">%s</span></div>%s</section>'
-                    % (k, jdate(k, lang), ("%d人" % total) if lang == "ja" else str(total), h))
+                    % (k, jdate(k, lang),
+                       (("%d人（一部確認）" % total) if lang == "ja" else ("%d (partial)" % total))
+                       if k > REVIEWED_THROUGH else (("%d人" % total) if lang == "ja" else str(total)), h))
         else:
             out += ('<div class="day empty"><span class="d">%s</span><span class="z">%s</span></div>'
-                    % (jdate(k, lang), "なし" if lang == "ja" else "none"))
+                    % (jdate(k, lang),
+                       ("調査中" if lang == "ja" else "under review") if k > REVIEWED_THROUGH
+                       else ("なし" if lang == "ja" else "none")))
         cur -= datetime.timedelta(days=1)
 
     more = ('<p class="more"><a href="archive.html">これより前の記録をすべて見る →</a></p>'
@@ -269,10 +293,11 @@ def build_index(d, ja_names, lang, today):
             '<p class="more"><a href="archive.html">See all earlier records →</a></p>')
     body = """
 <main>
-<div class="wrap"><section class="today">{t}</section></div>
+<div class="wrap"><section class="today">{t}</section>{coverage}</div>
 <div class="wrap">{days}{more}</div>
 </main>
-""".format(t=today_html, days=out, more=more)
+""".format(t=today_html, days=out, more=more,
+           coverage=coverage_note(lang) if tkey > REVIEWED_THROUGH else "")
     title = ("世界死刑執行記録 — 今日、世界のどこで、誰が死刑を執行されたか" if lang == "ja"
              else "World Execution Record — who was executed in the world today")
     desc = ("今日、世界のどこで、誰が死刑を執行されたかを日本時間で毎日記録する資料サイト。"
@@ -310,6 +335,7 @@ def build_archive(d, ja_names, lang):
 <article>
   <h1>{h1}</h1>
   <p class="lead">{lead}</p>
+  {coverage}
   <p class="count">{cnt}</p>
   <div class="gyonav">{nav}</div>
   {secs}
@@ -317,6 +343,7 @@ def build_archive(d, ja_names, lang):
 </main>
 """.format(h1="記録アーカイブ" if lang == "ja" else "Archive",
            lead=lead,
+           coverage=coverage_note(lang) if max(days) > REVIEWED_THROUGH else "",
            cnt=("全 %d件 ／ %s 〜 %s" % (len(d["E"]), min(days), max(days))) if lang == "ja"
                else ("%d records — %s to %s" % (len(d["E"]), min(days), max(days))),
            nav=nav, secs=secs)

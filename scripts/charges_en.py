@@ -6,6 +6,23 @@
 """
 
 CHARGE_EN = {
+    "1998年、アラバマ州の質店で2人を射殺した罪": "Shot and killed two people at an Alabama pawn shop in 1998",
+    "2000年、テキサス州のコンビニエンスストアで店員1人を射殺した罪": "Shot and killed a convenience store clerk in Texas in 2000",
+    "2005年、テキサス州の住宅で強盗を試み、3人を射殺した罪": "Shot and killed three people during an attempted home robbery in Texas in 2005",
+    "2005年、テキサス州ジャクソン郡の住宅で強盗を試み、3人を射殺した罪": "Shot and killed three people during an attempted home robbery in Jackson County, Texas, in 2005",
+    "2026年1月の抗議活動に関連するモハーレベなど": "Moharebeh and other charges linked to the January 2026 protests",
+    "6人の故意の殺害": "Intentional killing of six people",
+    "テロ関連の罪（タアズィール刑）": "Terrorism-related offences (ta'zir)",
+    "ヘロイン密輸（タアズィール刑）": "Heroin smuggling (ta'zir)",
+    "メタンフェタミン密輸（タアズィール刑）": "Methamphetamine smuggling (ta'zir)",
+    "判事の殺害": "Murder of a judge",
+    "女性を誘い出して刺殺（ギーラのハッド刑）": "Lured and stabbed a woman to death (ghila, hadd)",
+    "子ども3人の故意の殺人": "Intentional murder of three children",
+    "強姦": "Rape",
+    "殺人・強姦・強盗など（ハッド刑）": "Murder, rape, robbery and related offences (hadd)",
+    "母親の殺害と姉妹の殺害未遂（タアズィール刑）": "Murder of her mother and attempted murder of her sister (ta'zir)",
+    "老女と孫2人の故意の殺人、窃盗未遂、住居侵入": "Intentional murder of an elderly woman and two grandchildren, attempted theft and home invasion",
+    "麻薬犯罪と警官殺害": "Drug offences and murder of a police officer",
     # --- 決まり文句 ---
     "麻薬犯罪": "Drug offences",
     "殺人": "Murder",

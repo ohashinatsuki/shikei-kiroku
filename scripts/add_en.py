@@ -22,6 +22,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 METHOD = {
+    "薬物注射": "Lethal injection",
+    "薬物注射（ペントバルビタール）": "Lethal injection (pentobarbital)",
     "絞首刑": "Hanging",
     "絞首": "Hanging",
     "非公表（サウジは通常、斬首）": "Not disclosed (Saudi Arabia generally uses beheading)",
@@ -31,6 +33,24 @@ METHOD = {
 }
 
 PLACE = {
+    "アデン中央刑務所": "Aden Central Prison",
+    "イッブ市中央刑務所": "Ibb Central Prison",
+    "ウィリアム・C・ホルマン矯正施設（アトモア）": "William C. Holman Correctional Facility, Atmore",
+    "カーシャーン中央刑務所": "Kashan Central Prison",
+    "ガズヴィーン中央刑務所": "Qazvin Central Prison",
+    "サヌア・タハリール広場": "Tahrir Square, Sanaa",
+    "ザンジャーン中央刑務所": "Zanjan Central Prison",
+    "シャフレコルド中央刑務所": "Shahrekord Central Prison",
+    "シャーフルード中央刑務所": "Shahrud Central Prison",
+    "シーラーズ中央刑務所": "Shiraz Central Prison",
+    "タイズ県中央刑務所": "Taiz Central Prison",
+    "ダーリウ県サナフの中央刑務所": "Central Prison in Sanah, Dhale Governorate",
+    "テキサス州刑務所（ハンツビル）": "Texas State Penitentiary, Huntsville",
+    "ニーシャープール刑務所": "Nishapur Prison",
+    "ハドラマウト県ワディの更生・リハビリ施設": "Reform and Rehabilitation Facility in Wadi Hadhramaut",
+    "フロリダ州立刑務所（スターク近郊）": "Florida State Prison, near Starke",
+    "ホデイダ県中央更生施設": "Central Correctional Facility, Hodeidah Governorate",
+    "マシュハド中央刑務所": "Mashhad Central Prison",
     "アシール州": "Asir Province",
     "アルダビール中央刑務所": "Ardabil Central Prison",
     "アーデルアーバード刑務所（シーラーズ）": "Adelabad Prison, Shiraz",
@@ -174,6 +194,12 @@ EXTRA = {
 }
 
 SRC = {
+    "AP／テキサス州刑事司法局": "AP / Texas Department of Criminal Justice",
+    "Texas Tribune／テキサス州刑事司法局": "Texas Tribune / Texas Department of Criminal Justice",
+    "アラバマ州司法長官": "Alabama Attorney General",
+    "イエメン検察": "Yemeni Public Prosecution",
+    "フロリダ州矯正局": "Florida Department of Corrections",
+    "現地報道": "Local news report",
     "Ajel（内務省発表）": "Ajel (Ministry of Interior announcement)",
     "Akhbarna（内務省発表）": "Akhbarna (Ministry of Interior announcement)",
     "Al-Wathaq（内務省発表）": "Al-Wathaq (Ministry of Interior announcement)",
