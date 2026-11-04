@@ -63,7 +63,7 @@ def load():
     ja = {c["en"]: c["ja"] for c in d["C"]}
     libya = d.get("LIBYA_N", {})
     for e in d["E"]:
-        e["_n"] = libya.get(e["d"], 1) if (e["c"] == "Libya" and not e.get("name")) else 1
+        e["_n"] = e.get("n") or (libya.get(e["d"], 1) if (e["c"] == "Libya" and not e.get("name")) else 1)
         e["_jst"], e["_time"] = to_jst(e)
     return d, ja
 

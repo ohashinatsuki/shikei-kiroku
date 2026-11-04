@@ -6,6 +6,21 @@
 """
 
 CHARGE_EN = {
+    "医師オサマ・サブールの計画的殺人など": "Premeditated murder of physician Osama Sabour and related offences",
+    "妻の刺殺（ギーラのハッド刑）": "Stabbed wife to death (ghila, hadd)",
+    "就寝中の父親の殺害（ギーラのハッド刑）": "Killed sleeping father (ghila, hadd)",
+    "コカイン密輸（タアズィール刑）": "Cocaine smuggling (ta'zir)",
+    "大麻密輸（タアズィール刑）": "Cannabis smuggling (ta'zir)",
+    "警察官殺害（判決上）": "Convicted of murder of a police officer",
+    "イスラエルへのスパイ行為": "Espionage for Israel",
+    "サウジ支援勢力への諜報によるモハーレベ": "Moharebeh for alleged intelligence gathering for Saudi-backed forces",
+    "スパイ行為": "Espionage",
+    "モハーレベ": "Moharebeh (waging war against God)",
+    "モハーレベなどの治安関連の罪": "Moharebeh and other security-related charges",
+    "モハーレベ（2026年1月抗議活動関連）": "Moharebeh (linked to the January 2026 protests)",
+    "武装反乱（バギー）": "Armed rebellion (baghy)",
+    "モスク内でのわいせつ行為（タアズィール刑）。バングラデシュ国籍": "Indecent acts inside a mosque (ta'zir). Bangladeshi national",
+    "殺人・窃盗": "Murder and theft",
     "1998年、アラバマ州の質店で2人を射殺した罪": "Shot and killed two people at an Alabama pawn shop in 1998",
     "2000年、テキサス州のコンビニエンスストアで店員1人を射殺した罪": "Shot and killed a convenience store clerk in Texas in 2000",
     "2005年、テキサス州の住宅で強盗を試み、3人を射殺した罪": "Shot and killed three people during an attempted home robbery in Texas in 2005",

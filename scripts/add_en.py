@@ -33,6 +33,25 @@ METHOD = {
 }
 
 PLACE = {
+    "アスィール州": "Asir Province",
+    "バーハ州": "Al Bahah Province",
+    "マディーナ州": "Madinah Province",
+    "ダームガーン刑務所": "Damghan Prison",
+    "バンダレ・アッバース中央刑務所": "Bandar Abbas Central Prison",
+    "バンダレ・アッバース刑務所": "Bandar Abbas Prison",
+    "アラーク": "Arak",
+    "アラーク刑務所": "Arak Prison",
+    "ウルミア中央刑務所": "Urmia Central Prison",
+    "ケルマーン": "Kerman",
+    "ケルマーンシャー中央刑務所": "Kermanshah Central Prison",
+    "ケルマーン中央刑務所": "Kerman Central Prison",
+    "ゴルガーン中央刑務所": "Gorgan Central Prison",
+    "シールヴァーン中央刑務所": "Shirvan Central Prison",
+    "マラーイェル": "Malayer",
+    "マラーヤル刑務所": "Malayer Prison",
+    "ミーナーブ中央刑務所": "Minab Central Prison",
+    "ヤースージュ中央刑務所": "Yasuj Central Prison",
+    "アルフート刑務所（ナーシリーヤ）": "Al-Hout Prison, Nasiriyah",
     "アデン中央刑務所": "Aden Central Prison",
     "イッブ市中央刑務所": "Ibb Central Prison",
     "ウィリアム・C・ホルマン矯正施設（アトモア）": "William C. Holman Correctional Facility, Atmore",
@@ -108,6 +127,16 @@ PLACE = {
 }
 
 EXTRA = {
+    "執行日はHengawが10月7日、IHRNGOが10月8日と報じている。": "Hengaw reports October 7 as the execution date; IHRNGO reports October 8.",
+    "執行施設は報道されていない。": "The execution facility was not reported.",
+    "出典は、重い精神疾患の診断記録があり、刑事責任に疑義があると報じている。": "The source reports documented severe psychiatric illness and questions criminal responsibility.",
+    "出典は、裁判資料などを基に有罪判決に疑義があると報じている。": "The source questions the conviction on the basis of court records and other evidence.",
+    "同日の同刑務所で5人の執行が報じられた。別出典にあるRasoul Karimiとの重複を避け、残る4人を掲載。": "Five executions were reported at this prison on the same day. Four are listed here to avoid double counting Rasoul Karimi, reported by another source.",
+    "執行日はHengawが9月21日、IHRNGOが9月22日と報じている。": "Hengaw reports September 21 as the execution date; IHRNGO reports September 22.",
+    "同じ刑務所・同日の執行者について、HengawはMehrdad Sheikhi、HRANAはReza Sheikhiと報じている。": "For an execution at the same prison on the same day, Hengaw names Mehrdad Sheikhi and HRANA names Reza Sheikhi.",
+    "HRANAは同じ人物をHossein Jafariと報じている。": "HRANA identifies the same person as Hossein Jafari.",
+    "執行日はHRANAが9月27日、Hengawが9月28日と報じている。": "HRANA reports September 27 as the execution date; Hengaw reports September 28.",
+    "同じ日に同刑務所で執行された3人について、出典間で一部の氏名が異なる。": "Sources differ on some names among the three people executed at the same prison that day.",
     "1977年死刑判決。判決から35年。フロリダ州で今年14件目":
         "Sentenced to death in 1977; 35 years from sentence to execution. The 14th execution in Florida this year.",
     "2008年死刑判決、2018年再判決。最後の言葉「事故だった。傷つけるつもりはなかった」":
@@ -194,6 +223,8 @@ EXTRA = {
 }
 
 SRC = {
+    "Shbabbek（エジプト現地報道）": "Shbabbek (Egyptian news)",
+    "Rudaw（AFP）": "Rudaw (AFP)",
     "AP／テキサス州刑事司法局": "AP / Texas Department of Criminal Justice",
     "Texas Tribune／テキサス州刑事司法局": "Texas Tribune / Texas Department of Criminal Justice",
     "アラバマ州司法長官": "Alabama Attorney General",
