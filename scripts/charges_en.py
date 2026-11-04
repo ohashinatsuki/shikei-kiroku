@@ -6,6 +6,7 @@
 """
 
 CHARGE_EN = {
+    "故意の殺人（キサース）": "Intentional murder (qisas)",
     "医師オサマ・サブールの計画的殺人など": "Premeditated murder of physician Osama Sabour and related offences",
     "妻の刺殺（ギーラのハッド刑）": "Stabbed wife to death (ghila, hadd)",
     "就寝中の父親の殺害（ギーラのハッド刑）": "Killed sleeping father (ghila, hadd)",

@@ -33,6 +33,8 @@ METHOD = {
 }
 
 PLACE = {
+    "イッブ県中央更生施設": "Central Reformatory, Ibb Governorate",
+    "ラヒジュ県トゥバン地区サビル中央刑務所": "Sabir Central Prison, Tuban District, Lahj Governorate",
     "アスィール州": "Asir Province",
     "バーハ州": "Al Bahah Province",
     "マディーナ州": "Madinah Province",
@@ -127,6 +129,9 @@ PLACE = {
 }
 
 EXTRA = {
+    "ペルシア語版ではSeyed Saleh Mousaviと表記。別団体の近い氏名との同一性は未確認。": "The Persian version names him Seyed Saleh Mousavi. Whether reports with a similar name by other organizations refer to him is unconfirmed.",
+    "検察庁の記事は10月6日掲載だが、本文は月曜朝（10月5日）に執行したと明記。": "The prosecutor's article was published on October 6 but states that the execution took place on Monday morning, October 5.",
+    "執行場所はHengawがカラジ中央刑務所、IHRNGOとHRANAがゲゼルヘサール刑務所と報じている。": "Hengaw reports Karaj Central Prison as the execution site; IHRNGO and HRANA report Ghezel Hesar Prison.",
     "執行日はHengawが10月7日、IHRNGOが10月8日と報じている。": "Hengaw reports October 7 as the execution date; IHRNGO reports October 8.",
     "執行施設は報道されていない。": "The execution facility was not reported.",
     "出典は、重い精神疾患の診断記録があり、刑事責任に疑義があると報じている。": "The source reports documented severe psychiatric illness and questions criminal responsibility.",
@@ -223,6 +228,8 @@ EXTRA = {
 }
 
 SRC = {
+    "イエメン通信（YPA）": "Yemen Press Agency (YPA)",
+    "イエメン検察庁": "Yemen Public Prosecution",
     "Shbabbek（エジプト現地報道）": "Shbabbek (Egyptian news)",
     "Rudaw（AFP）": "Rudaw (AFP)",
     "AP／テキサス州刑事司法局": "AP / Texas Department of Criminal Justice",
