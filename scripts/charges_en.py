@@ -6,6 +6,7 @@
 """
 
 CHARGE_EN = {
+    "2010年、インディアナ州の住宅に放火し子ども2人を殺害": "Set fire to an Indiana home in 2010, killing two children",
     "故意の殺人（キサース）": "Intentional murder (qisas)",
     "医師オサマ・サブールの計画的殺人など": "Premeditated murder of physician Osama Sabour and related offences",
     "妻の刺殺（ギーラのハッド刑）": "Stabbed wife to death (ghila, hadd)",

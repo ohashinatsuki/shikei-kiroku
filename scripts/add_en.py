@@ -33,6 +33,7 @@ METHOD = {
 }
 
 PLACE = {
+    "インディアナ州立刑務所（ミシガンシティ）": "Indiana State Prison, Michigan City",
     "イッブ県中央更生施設": "Central Reformatory, Ibb Governorate",
     "ラヒジュ県トゥバン地区サビル中央刑務所": "Sabir Central Prison, Tuban District, Lahj Governorate",
     "アスィール州": "Asir Province",
@@ -228,6 +229,7 @@ EXTRA = {
 }
 
 SRC = {
+    "Indiana Capital Chronicle": "Indiana Capital Chronicle",
     "イエメン通信（YPA）": "Yemen Press Agency (YPA)",
     "イエメン検察庁": "Yemen Public Prosecution",
     "Shbabbek（エジプト現地報道）": "Shbabbek (Egyptian news)",
