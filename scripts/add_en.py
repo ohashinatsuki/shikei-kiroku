@@ -229,6 +229,7 @@ EXTRA = {
 }
 
 SRC = {
+    "AP／CBS": "AP / CBS News",
     "Indiana Capital Chronicle": "Indiana Capital Chronicle",
     "イエメン通信（YPA）": "Yemen Press Agency (YPA)",
     "イエメン検察庁": "Yemen Public Prosecution",
