@@ -6,6 +6,7 @@
 """
 
 CHARGE_EN = {
+    "武装反乱（バギー）とモハーレベ": "Baghy (armed rebellion) and moharebeh",
     "2004年、フロリダ州で女性を刺殺し金品を奪った": "Stabbed a woman to death and stole valuables in Florida in 2004",
     "1991年、アラバマ州で夫婦を殺害し金品を奪った": "Killed a couple and stole valuables in Alabama in 1991",
     "2010年、インディアナ州の住宅に放火し子ども2人を殺害": "Set fire to an Indiana home in 2010, killing two children",
