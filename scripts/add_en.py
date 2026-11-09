@@ -132,6 +132,7 @@ PLACE = {
 EXTRA = {
     "ペルシア語版ではSeyed Saleh Mousaviと表記。別団体の近い氏名との同一性は未確認。": "The Persian version names him Seyed Saleh Mousavi. Whether reports with a similar name by other organizations refer to him is unconfirmed.",
     "検察庁の記事は10月6日掲載だが、本文は月曜朝（10月5日）に執行したと明記。": "The prosecutor's article was published on October 6 but states that the execution took place on Monday morning, October 5.",
+    "執行場所はHengawがサーリー中央刑務所、IHRNGOがベフシャフル刑務所と報じている（https://iranhr.net/fa/print/5/9189/）。": "Hengaw reports Sari Central Prison as the execution site; IHRNGO reports Behshahr Prison (https://iranhr.net/fa/print/5/9189/).",
     "執行場所はHengawがカラジ中央刑務所、IHRNGOとHRANAがゲゼルヘサール刑務所と報じている。": "Hengaw reports Karaj Central Prison as the execution site; IHRNGO and HRANA report Ghezel Hesar Prison.",
     "執行日はHengawが10月7日、IHRNGOが10月8日と報じている。": "Hengaw reports October 7 as the execution date; IHRNGO reports October 8.",
     "執行施設は報道されていない。": "The execution facility was not reported.",
