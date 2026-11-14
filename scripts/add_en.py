@@ -69,6 +69,7 @@ PLACE = {
     "シーラーズ中央刑務所": "Shiraz Central Prison",
     "タイズ県中央刑務所": "Taiz Central Prison",
     "ダーリウ県サナフの中央刑務所": "Central Prison in Sanah, Dhale Governorate",
+    "オクラホマ州立刑務所（マカレスター）": "Oklahoma State Penitentiary, McAlester",
     "テキサス州刑務所（ハンツビル）": "Texas State Penitentiary, Huntsville",
     "ニーシャープール刑務所": "Nishapur Prison",
     "ハドラマウト県ワディの更生・リハビリ施設": "Reform and Rehabilitation Facility in Wadi Hadhramaut",
@@ -232,6 +233,8 @@ EXTRA = {
 }
 
 SRC = {
+    "AP": "Associated Press",
+    "Oklahoma Voice": "Oklahoma Voice",
     "AP／CBS": "AP / CBS News",
     "Indiana Capital Chronicle": "Indiana Capital Chronicle",
     "イエメン通信（YPA）": "Yemen Press Agency (YPA)",
