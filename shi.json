@@ -30592,6 +30592,1226 @@
    "total_cum": 2078,
    "total_prev_cum": 2099,
    "url": "https://www.itarda.or.jp/report/2026-11-12"
+  },
+  "2026-11-13": {
+   "pref": {
+    "三重": {
+     "cum": 48,
+     "day": 0,
+     "prev_cum": 49
+    },
+    "京都": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 40
+    },
+    "佐賀": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "兵庫": {
+     "cum": 107,
+     "day": 0,
+     "prev_cum": 82
+    },
+    "函館": {
+     "cum": 8,
+     "day": 0,
+     "prev_cum": 6
+    },
+    "北見": {
+     "cum": 4,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "千葉": {
+     "cum": 97,
+     "day": 1,
+     "prev_cum": 103
+    },
+    "和歌山": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "埼玉": {
+     "cum": 89,
+     "day": 2,
+     "prev_cum": 96
+    },
+    "大分": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 30
+    },
+    "大阪": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 99
+    },
+    "奈良": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 19
+    },
+    "宮城": {
+     "cum": 30,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "宮崎": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "富山": {
+     "cum": 22,
+     "day": 1,
+     "prev_cum": 22
+    },
+    "山口": {
+     "cum": 38,
+     "day": 1,
+     "prev_cum": 28
+    },
+    "山形": {
+     "cum": 17,
+     "day": 0,
+     "prev_cum": 17
+    },
+    "山梨": {
+     "cum": 10,
+     "day": 1,
+     "prev_cum": 16
+    },
+    "岐阜": {
+     "cum": 44,
+     "day": 0,
+     "prev_cum": 45
+    },
+    "岡山": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "岩手": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "島根": {
+     "cum": 12,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "広島": {
+     "cum": 42,
+     "day": 0,
+     "prev_cum": 51
+    },
+    "徳島": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "愛媛": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 39
+    },
+    "愛知": {
+     "cum": 106,
+     "day": 0,
+     "prev_cum": 92
+    },
+    "新潟": {
+     "cum": 40,
+     "day": 0,
+     "prev_cum": 45
+    },
+    "旭川": {
+     "cum": 11,
+     "day": 0,
+     "prev_cum": 11
+    },
+    "札幌": {
+     "cum": 57,
+     "day": 0,
+     "prev_cum": 54
+    },
+    "東京": {
+     "cum": 110,
+     "day": 0,
+     "prev_cum": 118
+    },
+    "栃木": {
+     "cum": 42,
+     "day": 1,
+     "prev_cum": 59
+    },
+    "沖縄": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 31
+    },
+    "滋賀": {
+     "cum": 31,
+     "day": 1,
+     "prev_cum": 45
+    },
+    "熊本": {
+     "cum": 43,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "石川": {
+     "cum": 24,
+     "day": 0,
+     "prev_cum": 29
+    },
+    "神奈川": {
+     "cum": 120,
+     "day": 2,
+     "prev_cum": 113
+    },
+    "福井": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 21
+    },
+    "福岡": {
+     "cum": 81,
+     "day": 0,
+     "prev_cum": 70
+    },
+    "福島": {
+     "cum": 46,
+     "day": 0,
+     "prev_cum": 46
+    },
+    "秋田": {
+     "cum": 19,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "群馬": {
+     "cum": 33,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "茨城": {
+     "cum": 90,
+     "day": 1,
+     "prev_cum": 68
+    },
+    "釧路": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 23
+    },
+    "長崎": {
+     "cum": 16,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "長野": {
+     "cum": 39,
+     "day": 0,
+     "prev_cum": 34
+    },
+    "青森": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "静岡": {
+     "cum": 59,
+     "day": 1,
+     "prev_cum": 54
+    },
+    "香川": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "高知": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "鳥取": {
+     "cum": 7,
+     "day": 0,
+     "prev_cum": 14
+    },
+    "鹿児島": {
+     "cum": 28,
+     "day": 0,
+     "prev_cum": 39
+    }
+   },
+   "region": {
+    "中国計": {
+     "cum": 137,
+     "day": 1,
+     "prev_cum": 144
+    },
+    "中部計": {
+     "cum": 264,
+     "day": 1,
+     "prev_cum": 258
+    },
+    "九州計": {
+     "cum": 276,
+     "day": 0,
+     "prev_cum": 276
+    },
+    "北海道計": {
+     "cum": 100,
+     "day": 0,
+     "prev_cum": 109
+    },
+    "四国計": {
+     "cum": 100,
+     "day": 0,
+     "prev_cum": 91
+    },
+    "東北計": {
+     "cum": 171,
+     "day": 0,
+     "prev_cum": 177
+    },
+    "近畿計": {
+     "cum": 313,
+     "day": 1,
+     "prev_cum": 313
+    },
+    "関東計": {
+     "cum": 619,
+     "day": 9,
+     "prev_cum": 624
+    }
+   },
+   "total": 12,
+   "total_cum": 2090,
+   "total_prev_cum": 2110,
+   "url": "https://www.itarda.or.jp/report/2026-11-13"
+  },
+  "2026-11-14": {
+   "pref": {
+    "三重": {
+     "cum": 48,
+     "day": 0,
+     "prev_cum": 49
+    },
+    "京都": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 40
+    },
+    "佐賀": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "兵庫": {
+     "cum": 109,
+     "day": 2,
+     "prev_cum": 82
+    },
+    "函館": {
+     "cum": 8,
+     "day": 0,
+     "prev_cum": 6
+    },
+    "北見": {
+     "cum": 4,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "千葉": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 103
+    },
+    "和歌山": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "埼玉": {
+     "cum": 89,
+     "day": 0,
+     "prev_cum": 96
+    },
+    "大分": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 30
+    },
+    "大阪": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 99
+    },
+    "奈良": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 20
+    },
+    "宮城": {
+     "cum": 30,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "宮崎": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "富山": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "山口": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "山形": {
+     "cum": 17,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "山梨": {
+     "cum": 10,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "岐阜": {
+     "cum": 44,
+     "day": 0,
+     "prev_cum": 46
+    },
+    "岡山": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "岩手": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "島根": {
+     "cum": 12,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "広島": {
+     "cum": 42,
+     "day": 0,
+     "prev_cum": 51
+    },
+    "徳島": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "愛媛": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 39
+    },
+    "愛知": {
+     "cum": 106,
+     "day": 0,
+     "prev_cum": 94
+    },
+    "新潟": {
+     "cum": 40,
+     "day": 0,
+     "prev_cum": 46
+    },
+    "旭川": {
+     "cum": 11,
+     "day": 0,
+     "prev_cum": 12
+    },
+    "札幌": {
+     "cum": 57,
+     "day": 0,
+     "prev_cum": 54
+    },
+    "東京": {
+     "cum": 110,
+     "day": 0,
+     "prev_cum": 118
+    },
+    "栃木": {
+     "cum": 42,
+     "day": 0,
+     "prev_cum": 59
+    },
+    "沖縄": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 31
+    },
+    "滋賀": {
+     "cum": 32,
+     "day": 1,
+     "prev_cum": 45
+    },
+    "熊本": {
+     "cum": 43,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "石川": {
+     "cum": 25,
+     "day": 1,
+     "prev_cum": 29
+    },
+    "神奈川": {
+     "cum": 122,
+     "day": 2,
+     "prev_cum": 113
+    },
+    "福井": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 21
+    },
+    "福岡": {
+     "cum": 81,
+     "day": 0,
+     "prev_cum": 70
+    },
+    "福島": {
+     "cum": 46,
+     "day": 0,
+     "prev_cum": 46
+    },
+    "秋田": {
+     "cum": 19,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "群馬": {
+     "cum": 34,
+     "day": 1,
+     "prev_cum": 36
+    },
+    "茨城": {
+     "cum": 90,
+     "day": 0,
+     "prev_cum": 68
+    },
+    "釧路": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 23
+    },
+    "長崎": {
+     "cum": 16,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "長野": {
+     "cum": 39,
+     "day": 0,
+     "prev_cum": 35
+    },
+    "青森": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "静岡": {
+     "cum": 59,
+     "day": 0,
+     "prev_cum": 55
+    },
+    "香川": {
+     "cum": 21,
+     "day": 1,
+     "prev_cum": 16
+    },
+    "高知": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "鳥取": {
+     "cum": 7,
+     "day": 0,
+     "prev_cum": 14
+    },
+    "鹿児島": {
+     "cum": 28,
+     "day": 0,
+     "prev_cum": 39
+    }
+   },
+   "region": {
+    "中国計": {
+     "cum": 137,
+     "day": 0,
+     "prev_cum": 144
+    },
+    "中部計": {
+     "cum": 265,
+     "day": 1,
+     "prev_cum": 261
+    },
+    "九州計": {
+     "cum": 276,
+     "day": 0,
+     "prev_cum": 276
+    },
+    "北海道計": {
+     "cum": 100,
+     "day": 0,
+     "prev_cum": 110
+    },
+    "四国計": {
+     "cum": 101,
+     "day": 1,
+     "prev_cum": 91
+    },
+    "東北計": {
+     "cum": 171,
+     "day": 0,
+     "prev_cum": 178
+    },
+    "近畿計": {
+     "cum": 316,
+     "day": 3,
+     "prev_cum": 314
+    },
+    "関東計": {
+     "cum": 622,
+     "day": 3,
+     "prev_cum": 627
+    }
+   },
+   "total": 8,
+   "total_cum": 2098,
+   "total_prev_cum": 2119,
+   "url": "https://www.itarda.or.jp/report/2026-11-14"
+  },
+  "2026-11-15": {
+   "pref": {
+    "三重": {
+     "cum": 48,
+     "day": 0,
+     "prev_cum": 49
+    },
+    "京都": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 40
+    },
+    "佐賀": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "兵庫": {
+     "cum": 109,
+     "day": 0,
+     "prev_cum": 82
+    },
+    "函館": {
+     "cum": 8,
+     "day": 0,
+     "prev_cum": 6
+    },
+    "北見": {
+     "cum": 4,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "千葉": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 103
+    },
+    "和歌山": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "埼玉": {
+     "cum": 89,
+     "day": 0,
+     "prev_cum": 96
+    },
+    "大分": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 30
+    },
+    "大阪": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 100
+    },
+    "奈良": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 20
+    },
+    "宮城": {
+     "cum": 30,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "宮崎": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "富山": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "山口": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "山形": {
+     "cum": 18,
+     "day": 1,
+     "prev_cum": 18
+    },
+    "山梨": {
+     "cum": 10,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "岐阜": {
+     "cum": 44,
+     "day": 0,
+     "prev_cum": 46
+    },
+    "岡山": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "岩手": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "島根": {
+     "cum": 12,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "広島": {
+     "cum": 43,
+     "day": 1,
+     "prev_cum": 51
+    },
+    "徳島": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "愛媛": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 39
+    },
+    "愛知": {
+     "cum": 106,
+     "day": 0,
+     "prev_cum": 94
+    },
+    "新潟": {
+     "cum": 41,
+     "day": 1,
+     "prev_cum": 47
+    },
+    "旭川": {
+     "cum": 11,
+     "day": 0,
+     "prev_cum": 12
+    },
+    "札幌": {
+     "cum": 57,
+     "day": 0,
+     "prev_cum": 54
+    },
+    "東京": {
+     "cum": 110,
+     "day": 0,
+     "prev_cum": 119
+    },
+    "栃木": {
+     "cum": 42,
+     "day": 0,
+     "prev_cum": 60
+    },
+    "沖縄": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 31
+    },
+    "滋賀": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 45
+    },
+    "熊本": {
+     "cum": 43,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "石川": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 30
+    },
+    "神奈川": {
+     "cum": 122,
+     "day": 0,
+     "prev_cum": 114
+    },
+    "福井": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 21
+    },
+    "福岡": {
+     "cum": 81,
+     "day": 0,
+     "prev_cum": 70
+    },
+    "福島": {
+     "cum": 47,
+     "day": 1,
+     "prev_cum": 48
+    },
+    "秋田": {
+     "cum": 19,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "群馬": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "茨城": {
+     "cum": 90,
+     "day": 0,
+     "prev_cum": 68
+    },
+    "釧路": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 23
+    },
+    "長崎": {
+     "cum": 16,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "長野": {
+     "cum": 39,
+     "day": 0,
+     "prev_cum": 35
+    },
+    "青森": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "静岡": {
+     "cum": 59,
+     "day": 0,
+     "prev_cum": 55
+    },
+    "香川": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "高知": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "鳥取": {
+     "cum": 7,
+     "day": 0,
+     "prev_cum": 14
+    },
+    "鹿児島": {
+     "cum": 28,
+     "day": 0,
+     "prev_cum": 39
+    }
+   },
+   "region": {
+    "中国計": {
+     "cum": 138,
+     "day": 1,
+     "prev_cum": 144
+    },
+    "中部計": {
+     "cum": 265,
+     "day": 0,
+     "prev_cum": 262
+    },
+    "九州計": {
+     "cum": 276,
+     "day": 0,
+     "prev_cum": 276
+    },
+    "北海道計": {
+     "cum": 100,
+     "day": 0,
+     "prev_cum": 110
+    },
+    "四国計": {
+     "cum": 101,
+     "day": 0,
+     "prev_cum": 91
+    },
+    "東北計": {
+     "cum": 173,
+     "day": 2,
+     "prev_cum": 180
+    },
+    "近畿計": {
+     "cum": 316,
+     "day": 0,
+     "prev_cum": 315
+    },
+    "関東計": {
+     "cum": 623,
+     "day": 1,
+     "prev_cum": 630
+    }
+   },
+   "total": 4,
+   "total_cum": 2102,
+   "total_prev_cum": 2127,
+   "url": "https://www.itarda.or.jp/report/2026-11-15"
+  },
+  "2026-11-16": {
+   "pref": {
+    "三重": {
+     "cum": 49,
+     "day": 1,
+     "prev_cum": 49
+    },
+    "京都": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 40
+    },
+    "佐賀": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "兵庫": {
+     "cum": 111,
+     "day": 2,
+     "prev_cum": 82
+    },
+    "函館": {
+     "cum": 8,
+     "day": 0,
+     "prev_cum": 6
+    },
+    "北見": {
+     "cum": 4,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "千葉": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 103
+    },
+    "和歌山": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 29
+    },
+    "埼玉": {
+     "cum": 91,
+     "day": 2,
+     "prev_cum": 96
+    },
+    "大分": {
+     "cum": 29,
+     "day": 0,
+     "prev_cum": 30
+    },
+    "大阪": {
+     "cum": 97,
+     "day": 0,
+     "prev_cum": 100
+    },
+    "奈良": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 20
+    },
+    "宮城": {
+     "cum": 30,
+     "day": 0,
+     "prev_cum": 33
+    },
+    "宮崎": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "富山": {
+     "cum": 22,
+     "day": 0,
+     "prev_cum": 22
+    },
+    "山口": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "山形": {
+     "cum": 18,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "山梨": {
+     "cum": 10,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "岐阜": {
+     "cum": 45,
+     "day": 1,
+     "prev_cum": 46
+    },
+    "岡山": {
+     "cum": 38,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "岩手": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 32
+    },
+    "島根": {
+     "cum": 12,
+     "day": 0,
+     "prev_cum": 15
+    },
+    "広島": {
+     "cum": 43,
+     "day": 0,
+     "prev_cum": 52
+    },
+    "徳島": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "愛媛": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 39
+    },
+    "愛知": {
+     "cum": 106,
+     "day": 0,
+     "prev_cum": 94
+    },
+    "新潟": {
+     "cum": 41,
+     "day": 0,
+     "prev_cum": 47
+    },
+    "旭川": {
+     "cum": 12,
+     "day": 1,
+     "prev_cum": 12
+    },
+    "札幌": {
+     "cum": 57,
+     "day": 0,
+     "prev_cum": 55
+    },
+    "東京": {
+     "cum": 111,
+     "day": 1,
+     "prev_cum": 121
+    },
+    "栃木": {
+     "cum": 42,
+     "day": 0,
+     "prev_cum": 60
+    },
+    "沖縄": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 31
+    },
+    "滋賀": {
+     "cum": 32,
+     "day": 0,
+     "prev_cum": 45
+    },
+    "熊本": {
+     "cum": 43,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "石川": {
+     "cum": 25,
+     "day": 0,
+     "prev_cum": 31
+    },
+    "神奈川": {
+     "cum": 122,
+     "day": 0,
+     "prev_cum": 115
+    },
+    "福井": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 21
+    },
+    "福岡": {
+     "cum": 81,
+     "day": 0,
+     "prev_cum": 70
+    },
+    "福島": {
+     "cum": 47,
+     "day": 0,
+     "prev_cum": 49
+    },
+    "秋田": {
+     "cum": 19,
+     "day": 0,
+     "prev_cum": 28
+    },
+    "群馬": {
+     "cum": 34,
+     "day": 0,
+     "prev_cum": 36
+    },
+    "茨城": {
+     "cum": 91,
+     "day": 1,
+     "prev_cum": 68
+    },
+    "釧路": {
+     "cum": 20,
+     "day": 0,
+     "prev_cum": 23
+    },
+    "長崎": {
+     "cum": 16,
+     "day": 0,
+     "prev_cum": 27
+    },
+    "長野": {
+     "cum": 40,
+     "day": 1,
+     "prev_cum": 35
+    },
+    "青森": {
+     "cum": 27,
+     "day": 2,
+     "prev_cum": 22
+    },
+    "静岡": {
+     "cum": 59,
+     "day": 0,
+     "prev_cum": 55
+    },
+    "香川": {
+     "cum": 21,
+     "day": 0,
+     "prev_cum": 16
+    },
+    "高知": {
+     "cum": 27,
+     "day": 0,
+     "prev_cum": 18
+    },
+    "鳥取": {
+     "cum": 7,
+     "day": 0,
+     "prev_cum": 14
+    },
+    "鹿児島": {
+     "cum": 28,
+     "day": 0,
+     "prev_cum": 39
+    }
+   },
+   "region": {
+    "中国計": {
+     "cum": 138,
+     "day": 0,
+     "prev_cum": 145
+    },
+    "中部計": {
+     "cum": 267,
+     "day": 2,
+     "prev_cum": 263
+    },
+    "九州計": {
+     "cum": 276,
+     "day": 0,
+     "prev_cum": 276
+    },
+    "北海道計": {
+     "cum": 101,
+     "day": 1,
+     "prev_cum": 111
+    },
+    "四国計": {
+     "cum": 101,
+     "day": 0,
+     "prev_cum": 91
+    },
+    "東北計": {
+     "cum": 175,
+     "day": 2,
+     "prev_cum": 182
+    },
+    "近畿計": {
+     "cum": 318,
+     "day": 2,
+     "prev_cum": 316
+    },
+    "関東計": {
+     "cum": 627,
+     "day": 4,
+     "prev_cum": 631
+    }
+   },
+   "total": 12,
+   "total_cum": 2114,
+   "total_prev_cum": 2136,
+   "url": "https://www.itarda.or.jp/report/2026-11-16"
   }
  },
  "yearly": {
