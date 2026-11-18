@@ -50,6 +50,7 @@ PLACE = {
     "ケルマーン中央刑務所": "Kerman Central Prison",
     "サーヴェ中央刑務所": "Saveh Central Prison",
     "バボルサル中央刑務所": "Babolsar Central Prison",
+    "マンデラ刑務所付近（ソマリランド）": "Near Mandera Prison, Somaliland",
     "ゴルガーン中央刑務所": "Gorgan Central Prison",
     "シールヴァーン中央刑務所": "Shirvan Central Prison",
     "マラーイェル": "Malayer",
@@ -233,6 +234,7 @@ EXTRA = {
 }
 
 SRC = {
+    "Kaab TV": "Kaab TV",
     "AP": "Associated Press",
     "Oklahoma Voice": "Oklahoma Voice",
     "AP／CBS": "AP / CBS News",
