@@ -85,6 +85,7 @@ PLACE = {
     "イスファハーン中央（ダストゲルド）刑務所": "Isfahan Central (Dastgerd) Prison",
     "イーラーム中央刑務所": "Ilam Central Prison",
     "カスィーム州": "Qassim Province",
+    "バンダルアッバース中央刑務所": "Bandar Abbas Central Prison",
     "カラジ中央刑務所": "Karaj Central Prison",
     "ガルナダ軍事刑務所（シャハート、東部）": "Gharnada Military Prison, Shahhat (eastern Libya)",
     "ゲゼルヘサール刑務所（カラジ）": "Ghezel Hesar Prison, Karaj",
