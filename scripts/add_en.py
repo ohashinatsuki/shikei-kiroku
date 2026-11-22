@@ -235,6 +235,7 @@ EXTRA = {
 }
 
 SRC = {
+    "ESOHR": "European Saudi Organisation for Human Rights",
     "Kaab TV": "Kaab TV",
     "AP": "Associated Press",
     "Oklahoma Voice": "Oklahoma Voice",
